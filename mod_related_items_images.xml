@@ -1,20 +1,20 @@
 <updates>
   <update>
     <name>Related Articles Images</name>
-  <description>Related Articles with Images</description>
-  <element>mod_related_items_images</element>
-  <type>module</type>
-  <version>1.1.0</version>
-  <client>site</client>
-  <infourl title="Related Articles Images"></infourl>
-  <downloads>
-    <downloadurl type="full" format="zip">https://github.com/vieri/mod_related_items_images/archive/master.zip</downloadurl>
-  </downloads>
-  <tags>
-    <tag>stable</tag>
-  </tags>
-  <maintainer>Jordi Sorts</maintainer>
-  <maintainerurl>https://websdefutbol.com</maintainerurl>
-  <targetplatform name="joomla" version="3.[6789]"/>
+    <description>Related Articles with Images</description>
+    <element>mod_related_items_images</element>
+    <type>module</type>
+    <version>1.1.0</version>
+    <client>site</client>
+    <infourl title="Related Articles Images">https://github.com/vieri/mod_related_items_images</infourl>
+    <downloads>
+      <downloadurl type="full" format="zip">https://github.com/vieri/mod_related_items_images/archive/master.zip</downloadurl>
+    </downloads>
+    <tags>
+      <tag>stable</tag>
+    </tags>
+    <maintainer>Jordi Sorts</maintainer>
+    <maintainerurl>https://websdefutbol.com</maintainerurl>
+    <targetplatform name="joomla" version="3.[6789]"/>
   </update>
 </updates>
