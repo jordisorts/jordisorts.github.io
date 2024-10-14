@@ -1,0 +1,1987 @@
+{
+"Full1":[
+ {
+  "DATA": "09\/29\/2024",
+  "JORNADA": 1,
+  "LLOC": "CARDEDEU",
+  "H.PARTIT": "11:00",
+  "H.ESCALF.": "10:30",
+  "CATEGORIA": "SUB12",
+  "LOCAL": "CEEC",
+  "VISITANT": "HIPIC GT"
+ },
+ {
+  "DATA": "10\/20\/2024",
+  "JORNADA": 2,
+  "LLOC": "MALLA",
+  "H.PARTIT": "14:10",
+  "H.ESCALF.": "13:40",
+  "CATEGORIA": "FEMENÍ",
+  "LOCAL": "HIPIC GT",
+  "VISITANT": "ALFORGES"
+ },
+ {
+  "DATA": "11\/17\/2024",
+  "JORNADA": 4,
+  "LLOC": "ESPARRAGUERA",
+  "H.PARTIT": "11:45",
+  "H.ESCALF.": "11:15",
+  "CATEGORIA": "SUB12",
+  "LOCAL": "HIPIC GT",
+  "VISITANT": "EQUILLET"
+ },
+ {
+  "DATA": "11\/17\/2024",
+  "JORNADA": 4,
+  "LLOC": "ESPARRAGUERA",
+  "H.PARTIT": "14:40",
+  "H.ESCALF.": "13:40",
+  "CATEGORIA": "FEMENÍ",
+  "LOCAL": "ESPARRAGUERA",
+  "VISITANT": "HIPIC GT"
+ },
+ {
+  "DATA": "12\/15\/2024",
+  "JORNADA": 6,
+  "LLOC": "HIPIC GT",
+  "H.PARTIT": "9:30",
+  "H.ESCALF.": "9:00",
+  "CATEGORIA": "SUB12",
+  "LOCAL": "HIPIC GT",
+  "VISITANT": "GARROTXA"
+ },
+ {
+  "DATA": "02\/02\/2025",
+  "JORNADA": 7,
+  "LLOC": "MIAMI",
+  "H.PARTIT": "15:15",
+  "H.ESCALF.": "14:45",
+  "CATEGORIA": "FEMENÍ",
+  "LOCAL": "CEEC",
+  "VISITANT": "HIPIC GT"
+ },
+ {
+  "DATA": "02\/16\/2025",
+  "JORNADA": 8,
+  "LLOC": "HB BANYOLES",
+  "H.PARTIT": "11:45",
+  "H.ESCALF.": "11:15",
+  "CATEGORIA": "SUB12",
+  "LOCAL": "HIPIC GT",
+  "VISITANT": "ALFORGES"
+ },
+ {
+  "DATA": "02\/16\/2025",
+  "JORNADA": 8,
+  "LLOC": "HB BANYOLES",
+  "H.PARTIT": "13:30",
+  "H.ESCALF.": "13:00",
+  "CATEGORIA": "FEMENÍ",
+  "LOCAL": "EQUILLET",
+  "VISITANT": "HIPIC GT"
+ },
+ {
+  "DATA": "03\/09\/2025",
+  "JORNADA": 10,
+  "LLOC": "MALLA",
+  "H.PARTIT": "11:45",
+  "H.ESCALF.": "11:15",
+  "CATEGORIA": "SUB12",
+  "LOCAL": "SERRAT",
+  "VISITANT": "HIPIC GT"
+ },
+ {
+  "DATA": "03\/16\/2025",
+  "JORNADA": 11,
+  "LLOC": "HB BANYOLES",
+  "H.PARTIT": "10:35",
+  "H.ESCALF.": "10:05",
+  "CATEGORIA": "SUB12",
+  "LOCAL": "LA SAGA",
+  "VISITANT": "HIPIC GT"
+ },
+ {
+  "DATA": "03\/16\/2025",
+  "JORNADA": 11,
+  "LLOC": "HB BANYOLES",
+  "H.PARTIT": "11:45",
+  "H.ESCALF.": "11:15",
+  "CATEGORIA": "FEMENÍ",
+  "LOCAL": "HB BANYOLES",
+  "VISITANT": "HIPIC GT"
+ },
+ {
+  "DATA": "04\/06\/2025",
+  "JORNADA": 12,
+  "LLOC": "HIPIC GT",
+  "CATEGORIA": "FEMENÍ"
+ },
+ {
+  "DATA": "05\/11\/2025",
+  "JORNADA": 13,
+  "LLOC": "MALLA",
+  "CATEGORIA": "FEMENÍ"
+ },
+ {
+  "DATA": "05\/11\/2025",
+  "JORNADA": 13,
+  "LLOC": "MALLA",
+  "CATEGORIA": "SUB12"
+ },
+ {
+  "DATA": "05\/25\/2025",
+  "JORNADA": 14,
+  "LLOC": "HIPIC GT",
+  "CATEGORIA": "FEMENÍ"
+ },
+ {
+  "DATA": "05\/25\/2025",
+  "JORNADA": 14,
+  "LLOC": "HIPIC GT",
+  "CATEGORIA": "SUB12"
+ },
+ {
+  "DATA": "06\/07\/2025",
+  "JORNADA": 15,
+  "LLOC": "CARDEDEU",
+  "CATEGORIA": "FEMENÍ"
+ },
+ {
+  "DATA": "06\/07\/2025",
+  "JORNADA": 15,
+  "LLOC": "CARDEDEU",
+  "CATEGORIA": "SUB12"
+ }
+],
+"Complet v1.0":[
+ {
+  "DATA": "09\/29\/2024",
+  "JORNADA": 1,
+  "LLOC": "CARDEDEU",
+  "H.PARTIT": "9:00",
+  "H.ESCALF.": "8:30",
+  "CATEGORIA": "SUB 14",
+  "LOCAL": "GT B",
+  "VISITANT": "CEEC"
+ },
+ {
+  "DATA": "09\/30\/2024",
+  "JORNADA": 1,
+  "LLOC": "CARDEDEU",
+  "H.PARTIT": "9:40",
+  "H.ESCALF.": "9:10",
+  "CATEGORIA": "SUB 10",
+  "LOCAL": "OSONA HORSES",
+  "VISITANT": "CEEC"
+ },
+ {
+  "DATA": "10\/01\/2024",
+  "JORNADA": 1,
+  "LLOC": "CARDEDEU",
+  "H.PARTIT": "10:20",
+  "H.ESCALF.": "9:50",
+  "CATEGORIA": "SUB 10",
+  "LOCAL": "ALFORGES",
+  "VISITANT": "GT"
+ },
+ {
+  "DATA": "10\/02\/2024",
+  "JORNADA": 1,
+  "LLOC": "CARDEDEU",
+  "H.PARTIT": "11:00",
+  "H.ESCALF.": "10:30",
+  "CATEGORIA": "SUB 12",
+  "LOCAL": "CEEC",
+  "VISITANT": "GT"
+ },
+ {
+  "DATA": "10\/03\/2024",
+  "JORNADA": 1,
+  "LLOC": "CARDEDEU",
+  "H.PARTIT": "11:40",
+  "H.ESCALF.": "11:10",
+  "CATEGORIA": "SUB 12",
+  "LOCAL": "LA SAGA",
+  "VISITANT": "SERRAT"
+ },
+ {
+  "DATA": "10\/04\/2024",
+  "JORNADA": 1,
+  "LLOC": "CARDEDEU",
+  "H.PARTIT": "12:20",
+  "H.ESCALF.": "11:50",
+  "CATEGORIA": "SUB 14",
+  "LOCAL": "GT A",
+  "VISITANT": "ALFORGES"
+ },
+ {
+  "DATA": "10\/05\/2024",
+  "JORNADA": 1,
+  "LLOC": "CARDEDEU",
+  "H.PARTIT": "13:00",
+  "H.ESCALF.": "12:30",
+  "CATEGORIA": "SUB 16",
+  "LOCAL": "CEEC",
+  "VISITANT": "SERRAT A"
+ },
+ {
+  "DATA": "10\/06\/2024",
+  "JORNADA": 1,
+  "LLOC": "CARDEDEU",
+  "H.PARTIT": "13:50",
+  "H.ESCALF.": "13:20",
+  "CATEGORIA": "TERCERA",
+  "LOCAL": "CEEC",
+  "VISITANT": "ALFORGES"
+ },
+ {
+  "DATA": "10\/07\/2024",
+  "JORNADA": 1,
+  "LLOC": "CARDEDEU",
+  "H.PARTIT": "14:30",
+  "H.ESCALF.": "14:00",
+  "CATEGORIA": "SUB 16",
+  "LOCAL": "SERRAT B",
+  "VISITANT": "ESPARREGUERA-OSONA"
+ },
+ {
+  "DATA": "10\/08\/2024",
+  "JORNADA": 1,
+  "LLOC": "CARDEDEU",
+  "H.PARTIT": "15:10",
+  "H.ESCALF.": "14:40",
+  "CATEGORIA": "TERCERA",
+  "LOCAL": "ESPARREGUERA",
+  "VISITANT": "BANYOLES"
+ },
+ {
+  "DATA": "10\/20\/2024",
+  "JORNADA": 2,
+  "LLOC": "MALLA",
+  "H.PARTIT": "9:30",
+  "H.ESCALF.": "9:00",
+  "CATEGORIA": "SUB 10",
+  "LOCAL": "GT",
+  "VISITANT": "OSONA HORSES"
+ },
+ {
+  "DATA": "10\/21\/2024",
+  "JORNADA": 2,
+  "LLOC": "MALLA",
+  "H.PARTIT": "10:05",
+  "H.ESCALF.": "9:35",
+  "CATEGORIA": "SUB 12",
+  "LOCAL": "GARROTXA",
+  "VISITANT": "SERRAT"
+ },
+ {
+  "DATA": "10\/22\/2024",
+  "JORNADA": 2,
+  "LLOC": "MALLA",
+  "H.PARTIT": "10:40",
+  "H.ESCALF.": "10:10",
+  "CATEGORIA": "SUB 12",
+  "LOCAL": "LA SAGA",
+  "VISITANT": "ALFORGES"
+ },
+ {
+  "DATA": "10\/23\/2024",
+  "JORNADA": 2,
+  "LLOC": "MALLA",
+  "H.PARTIT": "11:15",
+  "H.ESCALF.": "10:45",
+  "CATEGORIA": "SUB 16",
+  "LOCAL": "EL SERRAT 2",
+  "VISITANT": "BANYOLES"
+ },
+ {
+  "DATA": "10\/24\/2024",
+  "JORNADA": 2,
+  "LLOC": "MALLA",
+  "H.PARTIT": "11:50",
+  "H.ESCALF.": "11:20",
+  "CATEGORIA": "SUB 16",
+  "LOCAL": "EL SERRAT 1",
+  "VISITANT": "ALFORGES BLANC"
+ },
+ {
+  "DATA": "10\/25\/2024",
+  "JORNADA": 2,
+  "LLOC": "MALLA",
+  "H.PARTIT": "12:25",
+  "H.ESCALF.": "11:55",
+  "CATEGORIA": "MIXTE",
+  "LOCAL": "SERRAT 1",
+  "VISITANT": "ALFORGES"
+ },
+ {
+  "DATA": "10\/26\/2024",
+  "JORNADA": 2,
+  "LLOC": "MALLA",
+  "H.PARTIT": "13:00",
+  "H.ESCALF.": "12:30",
+  "CATEGORIA": "MIXTE",
+  "LOCAL": "GT",
+  "VISITANT": "BANYOLES 1"
+ },
+ {
+  "DATA": "10\/27\/2024",
+  "JORNADA": 2,
+  "LLOC": "MALLA",
+  "H.PARTIT": "13:35",
+  "H.ESCALF.": "13:05",
+  "CATEGORIA": "MIXTE",
+  "LOCAL": "SERRAT 2",
+  "VISITANT": "LA SAGA"
+ },
+ {
+  "DATA": "10\/28\/2024",
+  "JORNADA": 2,
+  "LLOC": "MALLA",
+  "H.PARTIT": "14:10",
+  "H.ESCALF.": "13:40",
+  "CATEGORIA": "FEMENÍ",
+  "LOCAL": "GT",
+  "VISITANT": "ALFORGES"
+ },
+ {
+  "DATA": "10\/29\/2024",
+  "JORNADA": 2,
+  "LLOC": "MALLA",
+  "H.PARTIT": "14:45",
+  "H.ESCALF.": "14:15",
+  "CATEGORIA": "MIXTE",
+  "LOCAL": "OSONA HORSES",
+  "VISITANT": "EQUINOVA"
+ },
+ {
+  "DATA": "10\/30\/2024",
+  "JORNADA": 2,
+  "LLOC": "MALLA",
+  "H.PARTIT": "15:20",
+  "H.ESCALF.": "14:50",
+  "CATEGORIA": "SUB 16",
+  "LOCAL": "CEEC",
+  "VISITANT": "EQUILLET"
+ },
+ {
+  "DATA": "10\/31\/2024",
+  "JORNADA": 2,
+  "LLOC": "MALLA",
+  "H.PARTIT": "15:55",
+  "H.ESCALF.": "15:25",
+  "CATEGORIA": "SUB 14",
+  "LOCAL": "EQUILLET 1",
+  "VISITANT": "OSONA HORSES"
+ },
+ {
+  "DATA": "11\/10\/2024",
+  "JORNADA": 3,
+  "LLOC": "LA SAGA",
+  "H.PARTIT": "9:30",
+  "H.ESCALF.": "9:00",
+  "CATEGORIA": "SUB 10",
+  "LOCAL": "ALFORGES",
+  "VISITANT": "LA SAGA"
+ },
+ {
+  "DATA": "11\/11\/2024",
+  "JORNADA": 3,
+  "LLOC": "LA SAGA",
+  "H.PARTIT": "10:05",
+  "H.ESCALF.": "9:35",
+  "CATEGORIA": "SUB 12",
+  "LOCAL": "LA SAGA",
+  "VISITANT": "GARROTXA"
+ },
+ {
+  "DATA": "11\/12\/2024",
+  "JORNADA": 3,
+  "LLOC": "LA SAGA",
+  "H.PARTIT": "10:40",
+  "H.ESCALF.": "10:10",
+  "CATEGORIA": "SUB 12",
+  "LOCAL": "ALFORGES",
+  "VISITANT": "EQUILLET"
+ },
+ {
+  "DATA": "11\/13\/2024",
+  "JORNADA": 3,
+  "LLOC": "LA SAGA",
+  "H.PARTIT": "11:15",
+  "H.ESCALF.": "10:45",
+  "CATEGORIA": "SUB 10",
+  "LOCAL": "EQUILLET",
+  "VISITANT": "CEEC"
+ },
+ {
+  "DATA": "11\/14\/2024",
+  "JORNADA": 3,
+  "LLOC": "LA SAGA",
+  "H.PARTIT": "12:00",
+  "CATEGORIA": "FEMENÍ",
+  "LOCAL": "EQUILLET",
+  "VISITANT": "ALFORGES"
+ },
+ {
+  "DATA": "11\/15\/2024",
+  "JORNADA": 3,
+  "LLOC": "LA SAGA",
+  "H.PARTIT": "12:45",
+  "CATEGORIA": "MIXTE",
+  "LOCAL": "OSONA HORSES",
+  "VISITANT": "GT"
+ },
+ {
+  "DATA": "11\/16\/2024",
+  "JORNADA": 3,
+  "LLOC": "LA SAGA",
+  "H.PARTIT": "13:30",
+  "CATEGORIA": "MIXTE",
+  "LOCAL": "ALFORGES",
+  "VISITANT": "BANYOLES 2"
+ },
+ {
+  "DATA": "11\/17\/2024",
+  "JORNADA": 3,
+  "LLOC": "LA SAGA",
+  "H.PARTIT": "14:15",
+  "CATEGORIA": "FEMENÍ",
+  "LOCAL": "BANYOLES",
+  "VISITANT": "CEEC"
+ },
+ {
+  "DATA": "11\/18\/2024",
+  "JORNADA": 3,
+  "LLOC": "LA SAGA",
+  "H.PARTIT": "15:00",
+  "CATEGORIA": "MIXTE",
+  "LOCAL": "LA SAGA",
+  "VISITANT": "EQUINOVA"
+ },
+ {
+  "DATA": "11\/19\/2024",
+  "JORNADA": 3,
+  "LLOC": "LA SAGA",
+  "H.PARTIT": "15:35",
+  "H.ESCALF.": "15:05",
+  "CATEGORIA": "SUB 16",
+  "LOCAL": "ALFORGES VERD",
+  "VISITANT": "BANYOLES"
+ },
+ {
+  "DATA": "11\/20\/2024",
+  "JORNADA": 3,
+  "LLOC": "LA SAGA",
+  "H.PARTIT": "16:10",
+  "H.ESCALF.": "15:40",
+  "CATEGORIA": "SUB 14",
+  "LOCAL": "EQUILLET 1",
+  "VISITANT": "ALFORGES"
+ },
+ {
+  "DATA": "11\/21\/2024",
+  "JORNADA": 3,
+  "LLOC": "LA SAGA",
+  "H.PARTIT": "16:45",
+  "H.ESCALF.": "16:15",
+  "CATEGORIA": "TERCERA",
+  "LOCAL": "BANYOLES",
+  "VISITANT": "ALFORGES"
+ },
+ {
+  "DATA": "11\/17\/2024",
+  "JORNADA": 4,
+  "LLOC": "ESPARRAGUERA",
+  "H.PARTIT": "10:00",
+  "H.ESCALF.": "9:30",
+  "CATEGORIA": "TERCERA",
+  "LOCAL": "CEEC",
+  "VISITANT": "ESPARREGUERA"
+ },
+ {
+  "DATA": "11\/18\/2024",
+  "JORNADA": 4,
+  "LLOC": "ESPARRAGUERA",
+  "H.PARTIT": "10:35",
+  "H.ESCALF.": "10:05",
+  "CATEGORIA": "SUB 14",
+  "LOCAL": "EQUILLET 2",
+  "VISITANT": "GT A"
+ },
+ {
+  "DATA": "11\/19\/2024",
+  "JORNADA": 4,
+  "LLOC": "ESPARRAGUERA",
+  "H.PARTIT": "11:10",
+  "H.ESCALF.": "10:40",
+  "CATEGORIA": "SUB 14",
+  "LOCAL": "MIAMI",
+  "VISITANT": "CEEC"
+ },
+ {
+  "DATA": "11\/20\/2024",
+  "JORNADA": 4,
+  "LLOC": "ESPARRAGUERA",
+  "H.PARTIT": "11:45",
+  "H.ESCALF.": "11:15",
+  "CATEGORIA": "SUB 12",
+  "LOCAL": "GT",
+  "VISITANT": "EQUILLET"
+ },
+ {
+  "DATA": "11\/21\/2024",
+  "JORNADA": 4,
+  "LLOC": "ESPARRAGUERA",
+  "H.PARTIT": "12:20",
+  "H.ESCALF.": "11:20",
+  "CATEGORIA": "SUB 12",
+  "LOCAL": "GARROTXA",
+  "VISITANT": "CEEC"
+ },
+ {
+  "DATA": "11\/22\/2024",
+  "JORNADA": 4,
+  "LLOC": "ESPARRAGUERA",
+  "H.PARTIT": "12:55",
+  "H.ESCALF.": "11:55",
+  "CATEGORIA": "SUB 16",
+  "LOCAL": "SERRAT 1",
+  "VISITANT": "SERRAT 2"
+ },
+ {
+  "DATA": "11\/23\/2024",
+  "JORNADA": 4,
+  "LLOC": "ESPARRAGUERA",
+  "H.PARTIT": "13:30",
+  "H.ESCALF.": "12:30",
+  "CATEGORIA": "SUB 14",
+  "LOCAL": "GT B",
+  "VISITANT": "OSONA HORSES"
+ },
+ {
+  "DATA": "11\/24\/2024",
+  "JORNADA": 4,
+  "LLOC": "ESPARRAGUERA",
+  "H.PARTIT": "14:05",
+  "H.ESCALF.": "13:05",
+  "CATEGORIA": "MIXTE",
+  "LOCAL": "SERRAT 1",
+  "VISITANT": "CEEC"
+ },
+ {
+  "DATA": "11\/25\/2024",
+  "JORNADA": 4,
+  "LLOC": "ESPARRAGUERA",
+  "H.PARTIT": "14:40",
+  "H.ESCALF.": "13:40",
+  "CATEGORIA": "FEMENÍ",
+  "LOCAL": "ESPARREGUERA",
+  "VISITANT": "GT"
+ },
+ {
+  "DATA": "11\/26\/2024",
+  "JORNADA": 4,
+  "LLOC": "ESPARRAGUERA",
+  "H.PARTIT": "15:15",
+  "H.ESCALF.": "14:15",
+  "CATEGORIA": "SUB 16",
+  "LOCAL": "ESPARREGUERA-OSONA",
+  "VISITANT": "CEEC"
+ },
+ {
+  "DATA": "11\/27\/2024",
+  "JORNADA": 4,
+  "LLOC": "ESPARRAGUERA",
+  "H.PARTIT": "15:50",
+  "H.ESCALF.": "14:50",
+  "CATEGORIA": "TERCERA",
+  "LOCAL": "MIAMI",
+  "VISITANT": "EQUILLET"
+ },
+ {
+  "DATA": "12\/01\/2024",
+  "JORNADA": 5,
+  "LLOC": "HB BANYOLES",
+  "H.PARTIT": "9:30",
+  "H.ESCALF.": "9:00",
+  "CATEGORIA": "SUB 10",
+  "LOCAL": "ALFORGES",
+  "VISITANT": "EQUILLET"
+ },
+ {
+  "DATA": "12\/02\/2024",
+  "JORNADA": 5,
+  "LLOC": "HB BANYOLES",
+  "H.PARTIT": "10:05",
+  "H.ESCALF.": "9:35",
+  "CATEGORIA": "SUB 10",
+  "LOCAL": "GT",
+  "VISITANT": "CEEC"
+ },
+ {
+  "DATA": "12\/03\/2024",
+  "JORNADA": 5,
+  "LLOC": "HB BANYOLES",
+  "H.PARTIT": "10:40",
+  "H.ESCALF.": "10:10",
+  "CATEGORIA": "SUB 12",
+  "LOCAL": "SERRAT",
+  "VISITANT": "ALFORGES"
+ },
+ {
+  "DATA": "12\/04\/2024",
+  "JORNADA": 5,
+  "LLOC": "HB BANYOLES",
+  "H.PARTIT": "11:15",
+  "H.ESCALF.": "10:45",
+  "CATEGORIA": "SUB 12",
+  "LOCAL": "EQUILLET",
+  "VISITANT": "LA SAGA"
+ },
+ {
+  "DATA": "12\/05\/2024",
+  "JORNADA": 5,
+  "LLOC": "HB BANYOLES",
+  "H.PARTIT": "11:50",
+  "H.ESCALF.": "11:20",
+  "CATEGORIA": "SUB 16",
+  "LOCAL": "EQUILLET",
+  "VISITANT": "ALFORGES VERD"
+ },
+ {
+  "DATA": "12\/06\/2024",
+  "JORNADA": 5,
+  "LLOC": "HB BANYOLES",
+  "H.PARTIT": "12:25",
+  "H.ESCALF.": "11:55",
+  "CATEGORIA": "MIXTE",
+  "LOCAL": "SERRAT 1",
+  "VISITANT": "LA SAGA"
+ },
+ {
+  "DATA": "12\/07\/2024",
+  "JORNADA": 5,
+  "LLOC": "HB BANYOLES",
+  "H.PARTIT": "13:00",
+  "H.ESCALF.": "12:30",
+  "CATEGORIA": "SUB 14",
+  "LOCAL": "EQUILLET 2",
+  "VISITANT": "ALFORGES"
+ },
+ {
+  "DATA": "12\/08\/2024",
+  "JORNADA": 5,
+  "LLOC": "HB BANYOLES",
+  "H.PARTIT": "13:35",
+  "H.ESCALF.": "13:05",
+  "CATEGORIA": "MIXTE",
+  "LOCAL": "CEEC",
+  "VISITANT": "ALFORGES"
+ },
+ {
+  "DATA": "12\/09\/2024",
+  "JORNADA": 5,
+  "LLOC": "HB BANYOLES",
+  "H.PARTIT": "14:10",
+  "H.ESCALF.": "13:40",
+  "CATEGORIA": "MIXTE",
+  "LOCAL": "SERRAT 2",
+  "VISITANT": "BANYOLES 1"
+ },
+ {
+  "DATA": "12\/10\/2024",
+  "JORNADA": 5,
+  "LLOC": "HB BANYOLES",
+  "H.PARTIT": "14:45",
+  "H.ESCALF.": "14:15",
+  "CATEGORIA": "FEMENÍ",
+  "LOCAL": "CEEC",
+  "VISITANT": "ALFORGES"
+ },
+ {
+  "DATA": "12\/11\/2024",
+  "JORNADA": 5,
+  "LLOC": "HB BANYOLES",
+  "H.PARTIT": "15:20",
+  "H.ESCALF.": "14:50",
+  "CATEGORIA": "TERCERA",
+  "LOCAL": "ALFORGES",
+  "VISITANT": "EQUILLET"
+ },
+ {
+  "DATA": "12\/12\/2024",
+  "JORNADA": 5,
+  "LLOC": "HB BANYOLES",
+  "H.PARTIT": "15:55",
+  "H.ESCALF.": "15:25",
+  "CATEGORIA": "SUB 16",
+  "LOCAL": "EL SERRAT 2",
+  "VISITANT": "ALFORGES BLANC"
+ },
+ {
+  "DATA": "12\/13\/2024",
+  "JORNADA": 5,
+  "LLOC": "HB BANYOLES",
+  "H.PARTIT": "16:30",
+  "H.ESCALF.": "16:00",
+  "CATEGORIA": "SUB 10",
+  "LOCAL": "LA SAGA",
+  "VISITANT": "OSONA HORSES"
+ },
+ {
+  "DATA": "12\/15\/2024",
+  "JORNADA": 6,
+  "LLOC": "HIPIC GT",
+  "H.PARTIT": "9:30",
+  "H.ESCALF.": "9:00",
+  "CATEGORIA": "SUB 12",
+  "LOCAL": "GT",
+  "VISITANT": "GARROTXA"
+ },
+ {
+  "DATA": "12\/16\/2024",
+  "JORNADA": 6,
+  "LLOC": "HIPIC GT",
+  "H.PARTIT": "10:05",
+  "H.ESCALF.": "9:35",
+  "CATEGORIA": "SUB 12",
+  "LOCAL": "EQUILLET",
+  "VISITANT": "CEEC"
+ },
+ {
+  "DATA": "12\/17\/2024",
+  "JORNADA": 6,
+  "LLOC": "HIPIC GT",
+  "H.PARTIT": "10:40",
+  "H.ESCALF.": "10:10",
+  "CATEGORIA": "SUB 10",
+  "LOCAL": "LA SAGA ",
+  "VISITANT": "EQUILLET"
+ },
+ {
+  "DATA": "12\/18\/2024",
+  "JORNADA": 6,
+  "LLOC": "HIPIC GT",
+  "H.PARTIT": "11:15",
+  "H.ESCALF.": "10:45",
+  "CATEGORIA": "SUB 10",
+  "LOCAL": "CEEC",
+  "VISITANT": "ALFORGES"
+ },
+ {
+  "DATA": "12\/19\/2024",
+  "JORNADA": 6,
+  "LLOC": "HIPIC GT",
+  "H.PARTIT": "11:50",
+  "H.ESCALF.": "11:20",
+  "CATEGORIA": "SUB 14",
+  "LOCAL": "EQUILLET 2",
+  "VISITANT": "GT B"
+ },
+ {
+  "DATA": "12\/20\/2024",
+  "JORNADA": 6,
+  "LLOC": "HIPIC GT",
+  "H.PARTIT": "12:25",
+  "H.ESCALF.": "11:55",
+  "CATEGORIA": "MIXTE",
+  "LOCAL": "BANYOLES 2",
+  "VISITANT": "LA SAGA"
+ },
+ {
+  "DATA": "12\/21\/2024",
+  "JORNADA": 6,
+  "LLOC": "HIPIC GT",
+  "H.PARTIT": "13:00",
+  "H.ESCALF.": "12:30",
+  "CATEGORIA": "MIXTE",
+  "LOCAL": "EQUINOVA",
+  "VISITANT": "GT"
+ },
+ {
+  "DATA": "12\/22\/2024",
+  "JORNADA": 6,
+  "LLOC": "HIPIC GT",
+  "H.PARTIT": "13:35",
+  "H.ESCALF.": "13:05",
+  "CATEGORIA": "FEMENÍ",
+  "LOCAL": "BANYOLES",
+  "VISITANT": "ESPARREGUERA"
+ },
+ {
+  "DATA": "12\/23\/2024",
+  "JORNADA": 6,
+  "LLOC": "HIPIC GT",
+  "H.PARTIT": "14:10",
+  "H.ESCALF.": "13:40",
+  "CATEGORIA": "SUB 14",
+  "LOCAL": "GT A",
+  "VISITANT": "EQUILLET 1"
+ },
+ {
+  "DATA": "12\/24\/2024",
+  "JORNADA": 6,
+  "LLOC": "HIPIC GT",
+  "H.PARTIT": "14:45",
+  "H.ESCALF.": "14:15",
+  "CATEGORIA": "SUB 14",
+  "LOCAL": "ALFORGES",
+  "VISITANT": "MIAMI"
+ },
+ {
+  "DATA": "12\/25\/2024",
+  "JORNADA": 6,
+  "LLOC": "HIPIC GT",
+  "H.PARTIT": "15:20",
+  "H.ESCALF.": "14:50",
+  "CATEGORIA": "SUB 16",
+  "LOCAL": "BANYOLES",
+  "VISITANT": "ESPARREGUERA-OSONA HORSES"
+ },
+ {
+  "DATA": "12\/26\/2024",
+  "JORNADA": 6,
+  "LLOC": "HIPIC GT",
+  "H.PARTIT": "15:55",
+  "H.ESCALF.": "15:25",
+  "CATEGORIA": "TERCERA",
+  "LOCAL": "BANYOLES",
+  "VISITANT": "MIAMI"
+ },
+ {
+  "DATA": "12\/27\/2024",
+  "JORNADA": 6,
+  "LLOC": "HIPIC GT",
+  "H.PARTIT": "16:30",
+  "H.ESCALF.": "16:00",
+  "CATEGORIA": "TERCERA",
+  "LOCAL": "ALFORGES",
+  "VISITANT": "ESPARREGUERA"
+ },
+ {
+  "DATA": "02\/02\/2025",
+  "JORNADA": 7,
+  "LLOC": "MIAMI",
+  "H.PARTIT": "10:00",
+  "H.ESCALF.": "9:30",
+  "CATEGORIA": "TERCERA",
+  "LOCAL": "MIAMI",
+  "VISITANT": "ESPARREGUERA"
+ },
+ {
+  "DATA": "02\/03\/2025",
+  "JORNADA": 7,
+  "LLOC": "MIAMI",
+  "H.PARTIT": "10:35",
+  "H.ESCALF.": "10:05",
+  "CATEGORIA": "TERCERA",
+  "LOCAL": "CEEC",
+  "VISITANT": "EQUILLET"
+ },
+ {
+  "DATA": "02\/04\/2025",
+  "JORNADA": 7,
+  "LLOC": "MIAMI",
+  "H.PARTIT": "11:10",
+  "H.ESCALF.": "10:40",
+  "CATEGORIA": "SUB 12",
+  "LOCAL": "CEEC",
+  "VISITANT": "SERRAT"
+ },
+ {
+  "DATA": "02\/05\/2025",
+  "JORNADA": 7,
+  "LLOC": "MIAMI",
+  "H.PARTIT": "11:45",
+  "H.ESCALF.": "11:15",
+  "CATEGORIA": "SUB 16",
+  "LOCAL": "CEEC",
+  "VISITANT": "SERRAT 2"
+ },
+ {
+  "DATA": "02\/06\/2025",
+  "JORNADA": 7,
+  "LLOC": "MIAMI",
+  "H.PARTIT": "12:20",
+  "H.ESCALF.": "11:50",
+  "CATEGORIA": "SUB 14",
+  "LOCAL": "EQUILLET 2",
+  "VISITANT": "EQUILLET 1"
+ },
+ {
+  "DATA": "02\/07\/2025",
+  "JORNADA": 7,
+  "LLOC": "MIAMI",
+  "H.PARTIT": "12:55",
+  "H.ESCALF.": "12:25",
+  "CATEGORIA": "MIXTE",
+  "LOCAL": "EQUINOVA",
+  "VISITANT": "SERRAT 1"
+ },
+ {
+  "DATA": "02\/08\/2025",
+  "JORNADA": 7,
+  "LLOC": "MIAMI",
+  "H.PARTIT": "13:30",
+  "H.ESCALF.": "13:00",
+  "CATEGORIA": "MIXTE",
+  "LOCAL": "SERRAT 2",
+  "VISITANT": "CEEC"
+ },
+ {
+  "DATA": "02\/09\/2025",
+  "JORNADA": 7,
+  "LLOC": "MIAMI",
+  "H.PARTIT": "14:05",
+  "H.ESCALF.": "13:35",
+  "CATEGORIA": "FEMENÍ",
+  "LOCAL": "ESPARREGUERA ",
+  "VISITANT": "EQUILLET"
+ },
+ {
+  "DATA": "02\/10\/2025",
+  "JORNADA": 7,
+  "LLOC": "MIAMI",
+  "H.PARTIT": "14:40",
+  "H.ESCALF.": "14:10",
+  "CATEGORIA": "SUB 14",
+  "LOCAL": "MIAMI",
+  "VISITANT": "OSONA HORSES"
+ },
+ {
+  "DATA": "02\/11\/2025",
+  "JORNADA": 7,
+  "LLOC": "MIAMI",
+  "H.PARTIT": "15:15",
+  "H.ESCALF.": "14:45",
+  "CATEGORIA": "FEMENÍ",
+  "LOCAL": "CEEC",
+  "VISITANT": "GT"
+ },
+ {
+  "DATA": "02\/16\/2025",
+  "JORNADA": 8,
+  "LLOC": "HB BANYOLES",
+  "H.PARTIT": "10:00",
+  "H.ESCALF.": "9:30",
+  "CATEGORIA": "SUB 16",
+  "LOCAL": "ALFORGES VERD",
+  "VISITANT": "ALFORGES BLANC"
+ },
+ {
+  "DATA": "02\/17\/2025",
+  "JORNADA": 8,
+  "LLOC": "HB BANYOLES",
+  "H.PARTIT": "10:35",
+  "H.ESCALF.": "10:05",
+  "CATEGORIA": "SUB 10",
+  "LOCAL": "LA SAGA",
+  "VISITANT": "GT A"
+ },
+ {
+  "DATA": "02\/18\/2025",
+  "JORNADA": 8,
+  "LLOC": "HB BANYOLES",
+  "H.PARTIT": "11:10",
+  "H.ESCALF.": "10:40",
+  "CATEGORIA": "SUB 10",
+  "LOCAL": "OSONA HORSES",
+  "VISITANT": "EQUILLET"
+ },
+ {
+  "DATA": "02\/19\/2025",
+  "JORNADA": 8,
+  "LLOC": "HB BANYOLES",
+  "H.PARTIT": "11:45",
+  "H.ESCALF.": "11:15",
+  "CATEGORIA": "SUB 12",
+  "LOCAL": "GT",
+  "VISITANT": "ALFORGES"
+ },
+ {
+  "DATA": "02\/20\/2025",
+  "JORNADA": 8,
+  "LLOC": "HB BANYOLES",
+  "H.PARTIT": "12:20",
+  "H.ESCALF.": "11:50",
+  "CATEGORIA": "MIXTE",
+  "LOCAL": "OSONA HORSES",
+  "VISITANT": "BANYOLES"
+ },
+ {
+  "DATA": "02\/21\/2025",
+  "JORNADA": 8,
+  "LLOC": "HB BANYOLES",
+  "H.PARTIT": "12:55",
+  "H.ESCALF.": "12:25",
+  "CATEGORIA": "MIXTE",
+  "LOCAL": "GT",
+  "VISITANT": "ALFORGES"
+ },
+ {
+  "DATA": "02\/22\/2025",
+  "JORNADA": 8,
+  "LLOC": "HB BANYOLES",
+  "H.PARTIT": "13:30",
+  "H.ESCALF.": "13:00",
+  "CATEGORIA": "FEMENÍ",
+  "LOCAL": "EQUILLET",
+  "VISITANT": "GT"
+ },
+ {
+  "DATA": "02\/23\/2025",
+  "JORNADA": 8,
+  "LLOC": "HB BANYOLES",
+  "H.PARTIT": "14:05",
+  "H.ESCALF.": "13:35",
+  "CATEGORIA": "FEMENÍ",
+  "LOCAL": "ALFORGES",
+  "VISITANT": "BANYOLES"
+ },
+ {
+  "DATA": "02\/24\/2025",
+  "JORNADA": 8,
+  "LLOC": "HB BANYOLES",
+  "H.PARTIT": "14:40",
+  "H.ESCALF.": "14:10",
+  "CATEGORIA": "SUB 14",
+  "LOCAL": "CEEC",
+  "VISITANT": "GT A"
+ },
+ {
+  "DATA": "02\/25\/2025",
+  "JORNADA": 8,
+  "LLOC": "HB BANYOLES",
+  "H.PARTIT": "15:15",
+  "H.ESCALF.": "14:45",
+  "CATEGORIA": "SUB 16",
+  "LOCAL": "EQUILLET",
+  "VISITANT": "BANYOLES"
+ },
+ {
+  "DATA": "02\/26\/2025",
+  "JORNADA": 8,
+  "LLOC": "HB BANYOLES",
+  "H.PARTIT": "15:50",
+  "H.ESCALF.": "15:20",
+  "CATEGORIA": "SUB 14",
+  "LOCAL": "GT B",
+  "VISITANT": "ALFORGES"
+ },
+ {
+  "DATA": "02\/23\/2025",
+  "JORNADA": 9,
+  "LLOC": "HB BANYOLES",
+  "H.PARTIT": "10:00",
+  "H.ESCALF.": "9:30",
+  "CATEGORIA": "SUB 12",
+  "LOCAL": "ALFORGES",
+  "VISITANT": "GARROTXA"
+ },
+ {
+  "DATA": "02\/24\/2025",
+  "JORNADA": 9,
+  "LLOC": "HB BANYOLES",
+  "H.PARTIT": "10:35",
+  "H.ESCALF.": "10:05",
+  "CATEGORIA": "TERCERA",
+  "LOCAL": "EQUILLET",
+  "VISITANT": "BANYOLES"
+ },
+ {
+  "DATA": "02\/25\/2025",
+  "JORNADA": 9,
+  "LLOC": "HB BANYOLES",
+  "H.PARTIT": "11:10",
+  "H.ESCALF.": "10:40",
+  "CATEGORIA": "SUB 12",
+  "LOCAL": "SERRAT",
+  "VISITANT": "EQUILLET"
+ },
+ {
+  "DATA": "02\/26\/2025",
+  "JORNADA": 9,
+  "LLOC": "HB BANYOLES",
+  "H.PARTIT": "11:45",
+  "H.ESCALF.": "11:15",
+  "CATEGORIA": "SUB 12",
+  "LOCAL": "CEEC",
+  "VISITANT": "LA SAGA"
+ },
+ {
+  "DATA": "02\/27\/2025",
+  "JORNADA": 9,
+  "LLOC": "HB BANYOLES",
+  "H.PARTIT": "12:20",
+  "H.ESCALF.": "11:50",
+  "CATEGORIA": "MIXTE",
+  "LOCAL": "SERRAT 2",
+  "VISITANT": "EQUINOVA"
+ },
+ {
+  "DATA": "02\/28\/2025",
+  "JORNADA": 9,
+  "LLOC": "HB BANYOLES",
+  "H.PARTIT": "12:55",
+  "H.ESCALF.": "12:25",
+  "CATEGORIA": "MIXTE",
+  "LOCAL": "OSONA HORSES",
+  "VISITANT": "BANYOLES 2"
+ },
+ {
+  "DATA": "03\/01\/2025",
+  "JORNADA": 9,
+  "LLOC": "HB BANYOLES",
+  "H.PARTIT": "13:30",
+  "H.ESCALF.": "13:00",
+  "CATEGORIA": "MIXTE",
+  "LOCAL": "LA SAGA",
+  "VISITANT": "CEEC"
+ },
+ {
+  "DATA": "03\/02\/2025",
+  "JORNADA": 9,
+  "LLOC": "HB BANYOLES",
+  "H.PARTIT": "14:05",
+  "H.ESCALF.": "13:35",
+  "CATEGORIA": "TERCERA",
+  "LOCAL": "ALFORGES",
+  "VISITANT": "MIAMI"
+ },
+ {
+  "DATA": "03\/03\/2025",
+  "JORNADA": 9,
+  "LLOC": "HB BANYOLES",
+  "H.PARTIT": "14:40",
+  "H.ESCALF.": "14:10",
+  "CATEGORIA": "SUB 10",
+  "LOCAL": "LA SAGA",
+  "VISITANT": "CEEC"
+ },
+ {
+  "DATA": "03\/04\/2025",
+  "JORNADA": 9,
+  "LLOC": "HB BANYOLES",
+  "H.PARTIT": "15:15",
+  "H.ESCALF.": "14:45",
+  "CATEGORIA": "FEMENÍ",
+  "LOCAL": "EQUILLET",
+  "VISITANT": "BANYOLES"
+ },
+ {
+  "DATA": "03\/05\/2025",
+  "JORNADA": 9,
+  "LLOC": "HB BANYOLES",
+  "H.PARTIT": "15:50",
+  "H.ESCALF.": "15:20",
+  "CATEGORIA": "SUB 14",
+  "LOCAL": "CEEC",
+  "VISITANT": "EQUILLET 1"
+ },
+ {
+  "DATA": "03\/06\/2025",
+  "JORNADA": 9,
+  "LLOC": "HB BANYOLES",
+  "H.PARTIT": "16:25",
+  "H.ESCALF.": "15:55",
+  "CATEGORIA": "SUB 14",
+  "LOCAL": "MIAMI",
+  "VISITANT": "GT B"
+ },
+ {
+  "DATA": "03\/09\/2025",
+  "JORNADA": 10,
+  "LLOC": "MALLA",
+  "H.PARTIT": "10:00",
+  "H.ESCALF.": "9:30",
+  "CATEGORIA": "SUB 10",
+  "LOCAL": "ALFORGES",
+  "VISITANT": "OSONA HORSES"
+ },
+ {
+  "DATA": "03\/10\/2025",
+  "JORNADA": 10,
+  "LLOC": "MALLA",
+  "H.PARTIT": "10:35",
+  "H.ESCALF.": "10:05",
+  "CATEGORIA": "SUB 10",
+  "LOCAL": "EQUILLET",
+  "VISITANT": "GT"
+ },
+ {
+  "DATA": "03\/11\/2025",
+  "JORNADA": 10,
+  "LLOC": "MALLA",
+  "H.PARTIT": "11:10",
+  "H.ESCALF.": "10:40",
+  "CATEGORIA": "SUB 14",
+  "LOCAL": "EQUILLET 2",
+  "VISITANT": "OSONA HORSES"
+ },
+ {
+  "DATA": "03\/12\/2025",
+  "JORNADA": 10,
+  "LLOC": "MALLA",
+  "H.PARTIT": "11:45",
+  "H.ESCALF.": "11:15",
+  "CATEGORIA": "SUB 12",
+  "LOCAL": "SERRAT",
+  "VISITANT": "GT"
+ },
+ {
+  "DATA": "03\/13\/2025",
+  "JORNADA": 10,
+  "LLOC": "MALLA",
+  "H.PARTIT": "12:20",
+  "H.ESCALF.": "11:50",
+  "CATEGORIA": "SUB 12",
+  "LOCAL": "GARROTXA",
+  "VISITANT": "EQUILLET"
+ },
+ {
+  "DATA": "03\/14\/2025",
+  "JORNADA": 10,
+  "LLOC": "MALLA",
+  "H.PARTIT": "12:55",
+  "H.ESCALF.": "12:25",
+  "CATEGORIA": "SUB 16",
+  "LOCAL": "EQUILLET",
+  "VISITANT": "SERRAT 2"
+ },
+ {
+  "DATA": "03\/15\/2025",
+  "JORNADA": 10,
+  "LLOC": "MALLA",
+  "H.PARTIT": "13:30",
+  "H.ESCALF.": "13:00",
+  "CATEGORIA": "SUB 16",
+  "LOCAL": "ALFORGES VERD",
+  "VISITANT": "EL SERRAT 1"
+ },
+ {
+  "DATA": "03\/16\/2025",
+  "JORNADA": 10,
+  "LLOC": "MALLA",
+  "H.PARTIT": "14:05",
+  "H.ESCALF.": "13:35",
+  "CATEGORIA": "MIXTE",
+  "LOCAL": "SERRAT 1",
+  "VISITANT": "BANYOLES 2"
+ },
+ {
+  "DATA": "03\/17\/2025",
+  "JORNADA": 10,
+  "LLOC": "MALLA",
+  "H.PARTIT": "14:40",
+  "H.ESCALF.": "14:10",
+  "CATEGORIA": "MIXTE",
+  "LOCAL": "OSONA HORSES",
+  "VISITANT": "ALFORGES"
+ },
+ {
+  "DATA": "03\/18\/2025",
+  "JORNADA": 10,
+  "LLOC": "MALLA",
+  "H.PARTIT": "15:15",
+  "H.ESCALF.": "14:45",
+  "CATEGORIA": "MIXTE",
+  "LOCAL": "CEEC",
+  "VISITANT": "BANYOLES"
+ },
+ {
+  "DATA": "03\/19\/2025",
+  "JORNADA": 10,
+  "LLOC": "MALLA",
+  "H.PARTIT": "15:50",
+  "H.ESCALF.": "15:20",
+  "CATEGORIA": "FEMENÍ",
+  "LOCAL": "ESPARREGUERA",
+  "VISITANT": "ALFORGES"
+ },
+ {
+  "DATA": "03\/20\/2025",
+  "JORNADA": 10,
+  "LLOC": "MALLA",
+  "H.PARTIT": "16:25",
+  "H.ESCALF.": "15:55",
+  "CATEGORIA": "SUB 16",
+  "LOCAL": "ALFORGES BLANC",
+  "VISITANT": "ESPARREGUERA-OSONA"
+ },
+ {
+  "DATA": "03\/21\/2025",
+  "JORNADA": 10,
+  "LLOC": "MALLA",
+  "H.PARTIT": "17:00",
+  "H.ESCALF.": "16:30",
+  "CATEGORIA": "TERCERA",
+  "LOCAL": "CEEC",
+  "VISITANT": "BANYOLES"
+ },
+ {
+  "DATA": "03\/22\/2025",
+  "JORNADA": 10,
+  "LLOC": "MALLA",
+  "H.PARTIT": "17:35",
+  "H.ESCALF.": "17:05",
+  "CATEGORIA": "FEMENÍ",
+  "LOCAL": "EQUILLET",
+  "VISITANT": "CEEC"
+ },
+ {
+  "DATA": "03\/16\/2025",
+  "JORNADA": 11,
+  "LLOC": "HB BANYOLES",
+  "H.PARTIT": "10:00",
+  "H.ESCALF.": "9:30",
+  "CATEGORIA": "SUB 14",
+  "LOCAL": "ALFORGES",
+  "VISITANT": "CEEC"
+ },
+ {
+  "DATA": "03\/17\/2025",
+  "JORNADA": 11,
+  "LLOC": "HB BANYOLES",
+  "H.PARTIT": "10:35",
+  "H.ESCALF.": "10:05",
+  "CATEGORIA": "SUB 12",
+  "LOCAL": "LA SAGA",
+  "VISITANT": "GT"
+ },
+ {
+  "DATA": "03\/18\/2025",
+  "JORNADA": 11,
+  "LLOC": "HB BANYOLES",
+  "H.PARTIT": "11:10",
+  "H.ESCALF.": "10:40",
+  "CATEGORIA": "SUB 12",
+  "LOCAL": "CEEC",
+  "VISITANT": "ALFORGES"
+ },
+ {
+  "DATA": "03\/19\/2025",
+  "JORNADA": 11,
+  "LLOC": "HB BANYOLES",
+  "H.PARTIT": "11:45",
+  "H.ESCALF.": "11:15",
+  "CATEGORIA": "FEMENÍ",
+  "LOCAL": "BANYOLES",
+  "VISITANT": "GT"
+ },
+ {
+  "DATA": "03\/20\/2025",
+  "JORNADA": 11,
+  "LLOC": "HB BANYOLES",
+  "H.PARTIT": "12:20",
+  "H.ESCALF.": "11:50",
+  "CATEGORIA": "SUB 16",
+  "LOCAL": "ALFORGES VERD",
+  "VISITANT": "CEEC"
+ },
+ {
+  "DATA": "03\/21\/2025",
+  "JORNADA": 11,
+  "LLOC": "HB BANYOLES",
+  "H.PARTIT": "12:55",
+  "H.ESCALF.": "12:25",
+  "CATEGORIA": "MIXTE",
+  "LOCAL": "LA SAGA",
+  "VISITANT": "BANYOLES 1"
+ },
+ {
+  "DATA": "03\/22\/2025",
+  "JORNADA": 11,
+  "LLOC": "HB BANYOLES",
+  "H.PARTIT": "13:30",
+  "H.ESCALF.": "13:00",
+  "CATEGORIA": "MIXTE",
+  "LOCAL": "GT",
+  "VISITANT": "BANYOLES 2"
+ },
+ {
+  "DATA": "03\/23\/2025",
+  "JORNADA": 11,
+  "LLOC": "HB BANYOLES",
+  "H.PARTIT": "14:05",
+  "H.ESCALF.": "13:35",
+  "CATEGORIA": "MIXTE",
+  "LOCAL": "ALFORGES",
+  "VISITANT": "EQUIINOVA"
+ },
+ {
+  "DATA": "03\/24\/2025",
+  "JORNADA": 11,
+  "LLOC": "HB BANYOLES",
+  "H.PARTIT": "14:40",
+  "H.ESCALF.": "14:10",
+  "CATEGORIA": "SUB 16",
+  "LOCAL": "BANYOLES",
+  "VISITANT": "ALFORGES BLANC"
+ },
+ {
+  "DATA": "03\/25\/2025",
+  "JORNADA": 11,
+  "LLOC": "HB BANYOLES",
+  "H.PARTIT": "15:15",
+  "H.ESCALF.": "14:45",
+  "CATEGORIA": "MIXTE",
+  "LOCAL": "SERRRAT 2",
+  "VISITANT": "OSONA HORSES"
+ },
+ {
+  "DATA": "03\/26\/2025",
+  "JORNADA": 11,
+  "LLOC": "HB BANYOLES",
+  "H.PARTIT": "15:50",
+  "H.ESCALF.": "15:20",
+  "CATEGORIA": "SUB 16",
+  "LOCAL": "ESPARREGUERA-OSONA",
+  "VISITANT": "SERRAT 1"
+ },
+ {
+  "DATA": "03\/27\/2025",
+  "JORNADA": 11,
+  "LLOC": "HB BANYOLES",
+  "H.PARTIT": "16:25",
+  "H.ESCALF.": "15:55",
+  "CATEGORIA": "FEMENÍ",
+  "LOCAL": "CEEC",
+  "VISITANT": "ESPARREGUERA"
+ },
+ {
+  "DATA": "04\/06\/2025",
+  "JORNADA": 12,
+  "LLOC": "HIPIC GT",
+  "H.PARTIT": "9:30",
+  "H.ESCALF.": "9:00",
+  "CATEGORIA": "SUB 14",
+  "LOCAL": "GT A",
+  "VISITANT": "GT B"
+ },
+ {
+  "DATA": "04\/07\/2025",
+  "JORNADA": 12,
+  "LLOC": "HIPIC GT",
+  "CATEGORIA": "SUB 14",
+  "LOCAL": "EQUILLET 1",
+  "VISITANT": "MIAMI"
+ },
+ {
+  "DATA": "04\/08\/2025",
+  "JORNADA": 12,
+  "LLOC": "HIPIC GT",
+  "CATEGORIA": "SUB 16",
+  "LOCAL": "SERRAT 1",
+  "VISITANT": "EQUILLET"
+ },
+ {
+  "DATA": "04\/09\/2025",
+  "JORNADA": 12,
+  "LLOC": "HIPIC GT",
+  "CATEGORIA": "SUB 14",
+  "LOCAL": "OSONA HORSES",
+  "VISITANT": "ALFORGES"
+ },
+ {
+  "DATA": "04\/10\/2025",
+  "JORNADA": 12,
+  "LLOC": "HIPIC GT",
+  "CATEGORIA": "MIXTE",
+  "LOCAL": "SERRAT 2",
+  "VISITANT": "BANYOLES 2"
+ },
+ {
+  "DATA": "04\/11\/2025",
+  "JORNADA": 12,
+  "LLOC": "HIPIC GT",
+  "CATEGORIA": "MIXTE",
+  "LOCAL": "CEEC",
+  "VISITANT": "OSONA HORSES"
+ },
+ {
+  "DATA": "04\/12\/2025",
+  "JORNADA": 12,
+  "LLOC": "HIPIC GT",
+  "CATEGORIA": "MIXTE",
+  "LOCAL": "BANYOLES 1",
+  "VISITANT": "SERRAT 1"
+ },
+ {
+  "DATA": "04\/13\/2025",
+  "JORNADA": 12,
+  "LLOC": "HIPIC GT",
+  "CATEGORIA": "MIXTE",
+  "LOCAL": "GT",
+  "VISITANT": "LA SAGA"
+ },
+ {
+  "DATA": "04\/14\/2025",
+  "JORNADA": 12,
+  "LLOC": "HIPIC GT",
+  "CATEGORIA": "TERCERA",
+  "LOCAL": "CEEC",
+  "VISITANT": "MIAMI"
+ },
+ {
+  "DATA": "04\/15\/2025",
+  "JORNADA": 12,
+  "LLOC": "HIPIC GT",
+  "CATEGORIA": "TERCERA",
+  "LOCAL": "EQUILLET",
+  "VISITANT": "ESPARREGUERA"
+ },
+ {
+  "DATA": "04\/16\/2025",
+  "JORNADA": 12,
+  "LLOC": "HIPIC GT",
+  "CATEGORIA": "SUB 10",
+  "LOCAL": "FASE FINAL ",
+  "VISITANT": "FASE FINAL "
+ },
+ {
+  "DATA": "04\/17\/2025",
+  "JORNADA": 12,
+  "LLOC": "HIPIC GT",
+  "CATEGORIA": "SUB 10",
+  "LOCAL": "FASE FINAL ",
+  "VISITANT": "FASE FINAL "
+ },
+ {
+  "DATA": "04\/18\/2025",
+  "JORNADA": 12,
+  "LLOC": "HIPIC GT",
+  "CATEGORIA": "FEMENÍ",
+  "LOCAL": "FASE FINAL ",
+  "VISITANT": "FASE FINAL "
+ },
+ {
+  "DATA": "04\/19\/2025",
+  "JORNADA": 12,
+  "LLOC": "HIPIC GT",
+  "CATEGORIA": "FEMENÍ",
+  "LOCAL": "FASE FINAL ",
+  "VISITANT": "FASE FINAL "
+ },
+ {
+  "DATA": "05\/11\/2025",
+  "JORNADA": 13,
+  "LLOC": "MALLA",
+  "H.PARTIT": "9:30",
+  "H.ESCALF.": "9:00",
+  "CATEGORIA": "SUB 12",
+  "LOCAL": "FASE FINAL ",
+  "VISITANT": "FASE FINAL "
+ },
+ {
+  "DATA": "05\/12\/2025",
+  "JORNADA": 13,
+  "LLOC": "MALLA",
+  "CATEGORIA": "SUB 12",
+  "LOCAL": "FASE FINAL ",
+  "VISITANT": "FASE FINAL "
+ },
+ {
+  "DATA": "05\/13\/2025",
+  "JORNADA": 13,
+  "LLOC": "MALLA",
+  "CATEGORIA": "SUB 12",
+  "LOCAL": "FASE FINAL ",
+  "VISITANT": "FASE FINAL "
+ },
+ {
+  "DATA": "05\/14\/2025",
+  "JORNADA": 13,
+  "LLOC": "MALLA",
+  "CATEGORIA": "SUB 14",
+  "LOCAL": "MIAMI",
+  "VISITANT": "EQUILLET 2"
+ },
+ {
+  "DATA": "05\/15\/2025",
+  "JORNADA": 13,
+  "LLOC": "MALLA",
+  "CATEGORIA": "SUB 16",
+  "LOCAL": "BANYOLES",
+  "VISITANT": "CEEC"
+ },
+ {
+  "DATA": "05\/16\/2025",
+  "JORNADA": 13,
+  "LLOC": "MALLA",
+  "CATEGORIA": "MIXTE",
+  "LOCAL": "LA SAGA",
+  "VISITANT": "ALFORGES"
+ },
+ {
+  "DATA": "05\/17\/2025",
+  "JORNADA": 13,
+  "LLOC": "MALLA",
+  "CATEGORIA": "MIXTE",
+  "LOCAL": "BANYOLES 1",
+  "VISITANT": "EQUINOVA"
+ },
+ {
+  "DATA": "05\/18\/2025",
+  "JORNADA": 13,
+  "LLOC": "MALLA",
+  "CATEGORIA": "MIXTE",
+  "LOCAL": "SERRAT 2",
+  "VISITANT": "GT"
+ },
+ {
+  "DATA": "05\/19\/2025",
+  "JORNADA": 13,
+  "LLOC": "MALLA",
+  "CATEGORIA": "MIXTE",
+  "LOCAL": "BANYOLES 2",
+  "VISITANT": "CEEC"
+ },
+ {
+  "DATA": "05\/20\/2025",
+  "JORNADA": 13,
+  "LLOC": "MALLA",
+  "CATEGORIA": "MIXTE",
+  "LOCAL": "SERRAT 1",
+  "VISITANT": "OSONA HORSES"
+ },
+ {
+  "DATA": "05\/21\/2025",
+  "JORNADA": 13,
+  "LLOC": "MALLA",
+  "CATEGORIA": "SUB 16",
+  "LOCAL": "ALFORGES VERD",
+  "VISITANT": "ESPARREGUERA-OSONA"
+ },
+ {
+  "DATA": "05\/22\/2025",
+  "JORNADA": 13,
+  "LLOC": "MALLA",
+  "CATEGORIA": "FEMENÍ",
+  "LOCAL": "FASE FINAL ",
+  "VISITANT": "FASE FINAL "
+ },
+ {
+  "DATA": "05\/23\/2025",
+  "JORNADA": 13,
+  "LLOC": "MALLA",
+  "CATEGORIA": "FEMENÍ",
+  "LOCAL": "FASE FINAL ",
+  "VISITANT": "FASE FINAL "
+ },
+ {
+  "DATA": "05\/24\/2025",
+  "JORNADA": 13,
+  "LLOC": "MALLA",
+  "CATEGORIA": "TERCERA",
+  "LOCAL": "FASE FINAL ",
+  "VISITANT": "FASE FINAL "
+ },
+ {
+  "DATA": "05\/25\/2025",
+  "JORNADA": 14,
+  "LLOC": "HIPIC GT",
+  "H.PARTIT": "9:00",
+  "H.ESCALF.": "8:30",
+  "CATEGORIA": "SUB 10",
+  "LOCAL": "FASE FINAL ",
+  "VISITANT": "FASE FINAL "
+ },
+ {
+  "DATA": "05\/26\/2025",
+  "JORNADA": 14,
+  "LLOC": "HIPIC GT",
+  "CATEGORIA": "SUB 10",
+  "LOCAL": "FASE FINAL ",
+  "VISITANT": "FASE FINAL "
+ },
+ {
+  "DATA": "05\/27\/2025",
+  "JORNADA": 14,
+  "LLOC": "HIPIC GT",
+  "CATEGORIA": "SUB 12",
+  "LOCAL": "FASE FINAL ",
+  "VISITANT": "FASE FINAL "
+ },
+ {
+  "DATA": "05\/28\/2025",
+  "JORNADA": 14,
+  "LLOC": "HIPIC GT",
+  "CATEGORIA": "SUB 12",
+  "LOCAL": "FASE FINAL ",
+  "VISITANT": "FASE FINAL "
+ },
+ {
+  "DATA": "05\/29\/2025",
+  "JORNADA": 14,
+  "LLOC": "HIPIC GT",
+  "CATEGORIA": "SUB 12",
+  "LOCAL": "FASE FINAL ",
+  "VISITANT": "FASE FINAL "
+ },
+ {
+  "DATA": "05\/30\/2025",
+  "JORNADA": 14,
+  "LLOC": "HIPIC GT",
+  "CATEGORIA": "MIXTE",
+  "LOCAL": "ALFORGES",
+  "VISITANT": "BANYOLES 1"
+ },
+ {
+  "DATA": "05\/31\/2025",
+  "JORNADA": 14,
+  "LLOC": "HIPIC GT",
+  "CATEGORIA": "MIXTE",
+  "LOCAL": "GT",
+  "VISITANT": "CEEC"
+ },
+ {
+  "DATA": "06\/01\/2025",
+  "JORNADA": 14,
+  "LLOC": "HIPIC GT",
+  "CATEGORIA": "MIXTE",
+  "LOCAL": "SERRAT 2",
+  "VISITANT": "SERRAT 1"
+ },
+ {
+  "DATA": "06\/02\/2025",
+  "JORNADA": 14,
+  "LLOC": "HIPIC GT",
+  "CATEGORIA": "SUB 16",
+  "LOCAL": "EQUILLET",
+  "VISITANT": "ALFORGES BLANC"
+ },
+ {
+  "DATA": "06\/03\/2025",
+  "JORNADA": 14,
+  "LLOC": "HIPIC GT",
+  "CATEGORIA": "SUB 14",
+  "LOCAL": "OSONA HORSES",
+  "VISITANT": "GT A"
+ },
+ {
+  "DATA": "06\/04\/2025",
+  "JORNADA": 14,
+  "LLOC": "HIPIC GT",
+  "CATEGORIA": "SUB 14",
+  "LOCAL": "CEEC",
+  "VISITANT": "EQUILLET 2"
+ },
+ {
+  "DATA": "06\/05\/2025",
+  "JORNADA": 14,
+  "LLOC": "HIPIC GT",
+  "CATEGORIA": "FEMENÍ",
+  "LOCAL": "FASE FINAL ",
+  "VISITANT": "FASE FINAL "
+ },
+ {
+  "DATA": "06\/06\/2025",
+  "JORNADA": 14,
+  "LLOC": "HIPIC GT",
+  "CATEGORIA": "TERCERA",
+  "LOCAL": "FASE FINAL ",
+  "VISITANT": "FASE FINAL "
+ },
+ {
+  "DATA": "06\/07\/2025",
+  "JORNADA": 14,
+  "LLOC": "HIPIC GT",
+  "CATEGORIA": "TERCERA",
+  "LOCAL": "FASE FINAL ",
+  "VISITANT": "FASE FINAL "
+ },
+ {
+  "DATA": "06\/08\/2025",
+  "JORNADA": 14,
+  "LLOC": "HIPIC GT",
+  "CATEGORIA": "MIXTE",
+  "LOCAL": "BANYOLES 2",
+  "VISITANT": "EQUINOVA"
+ },
+ {
+  "DATA": "06\/07\/2025",
+  "JORNADA": 15,
+  "LLOC": "CARDEDEU",
+  "CATEGORIA": "SUB 10",
+  "LOCAL": "FASE FINAL ",
+  "VISITANT": "FASE FINAL "
+ },
+ {
+  "DATA": "06\/08\/2025",
+  "JORNADA": 15,
+  "LLOC": "CARDEDEU",
+  "CATEGORIA": "SUB 10",
+  "LOCAL": "FASE FINAL ",
+  "VISITANT": "FASE FINAL "
+ },
+ {
+  "DATA": "06\/09\/2025",
+  "JORNADA": 15,
+  "LLOC": "CARDEDEU",
+  "CATEGORIA": "SUB 12",
+  "LOCAL": "FASE FINAL ",
+  "VISITANT": "FASE FINAL "
+ },
+ {
+  "DATA": "06\/10\/2025",
+  "JORNADA": 15,
+  "LLOC": "CARDEDEU",
+  "CATEGORIA": "SUB 12",
+  "LOCAL": "FASE FINAL ",
+  "VISITANT": "FASE FINAL "
+ },
+ {
+  "DATA": "06\/11\/2025",
+  "JORNADA": 15,
+  "LLOC": "CARDEDEU",
+  "CATEGORIA": "SUB 12",
+  "LOCAL": "FASE FINAL ",
+  "VISITANT": "FASE FINAL "
+ },
+ {
+  "DATA": "06\/12\/2025",
+  "JORNADA": 15,
+  "LLOC": "CARDEDEU",
+  "CATEGORIA": "SUB 14",
+  "LOCAL": "OSONA HORSES",
+  "VISITANT": "CEEC"
+ },
+ {
+  "DATA": "06\/13\/2025",
+  "JORNADA": 15,
+  "LLOC": "CARDEDEU",
+  "CATEGORIA": "SUB 14",
+  "LOCAL": "GT B",
+  "VISITANT": "EQUILLET 1"
+ },
+ {
+  "DATA": "06\/14\/2025",
+  "JORNADA": 15,
+  "LLOC": "CARDEDEU",
+  "CATEGORIA": "SUB 14",
+  "LOCAL": "GT A",
+  "VISITANT": "MIAMI"
+ },
+ {
+  "DATA": "06\/15\/2025",
+  "JORNADA": 15,
+  "LLOC": "CARDEDEU",
+  "CATEGORIA": "TERCERA",
+  "LOCAL": "FASE FINAL ",
+  "VISITANT": "FASE FINAL "
+ },
+ {
+  "DATA": "06\/16\/2025",
+  "JORNADA": 15,
+  "LLOC": "CARDEDEU",
+  "CATEGORIA": "TERCERA",
+  "LOCAL": "FASE FINAL ",
+  "VISITANT": "FASE FINAL "
+ },
+ {
+  "DATA": "06\/17\/2025",
+  "JORNADA": 15,
+  "LLOC": "CARDEDEU",
+  "CATEGORIA": "TERCERA",
+  "LOCAL": "FASE FINAL ",
+  "VISITANT": "FASE FINAL "
+ },
+ {
+  "DATA": "06\/18\/2025",
+  "JORNADA": 16,
+  "LLOC": "CARDEDEU",
+  "CATEGORIA": "SUB 16",
+  "LOCAL": "ALFORGES BLANC",
+  "VISITANT": "CEEC"
+ },
+ {
+  "DATA": "06\/19\/2025",
+  "JORNADA": 16,
+  "LLOC": "CARDEDEU",
+  "CATEGORIA": "SUB 16",
+  "LOCAL": "EL SERRAT 2",
+  "VISITANT": "ALFORGES VERD"
+ },
+ {
+  "DATA": "06\/20\/2025",
+  "JORNADA": 16,
+  "LLOC": "CARDEDEU",
+  "CATEGORIA": "SUB 16",
+  "LOCAL": "BANYOLES",
+  "VISITANT": "EL SERRAT 1"
+ },
+ {
+  "DATA": "06\/21\/2025",
+  "JORNADA": 16,
+  "LLOC": "CARDEDEU",
+  "CATEGORIA": "SUB 16",
+  "LOCAL": "ESPARREGUERA",
+  "VISITANT": "EQUILLET"
+ },
+ {
+  "DATA": "06\/22\/2025",
+  "JORNADA": 16,
+  "LLOC": "CARDEDEU",
+  "CATEGORIA": "FEMENÍ",
+  "LOCAL": "FASE FINAL ",
+  "VISITANT": "FASE FINAL "
+ },
+ {
+  "DATA": "06\/23\/2025",
+  "JORNADA": 16,
+  "LLOC": "CARDEDEU",
+  "CATEGORIA": "FEMENÍ",
+  "LOCAL": "FASE FINAL ",
+  "VISITANT": "FASE FINAL "
+ },
+ {
+  "DATA": "06\/24\/2025",
+  "JORNADA": 16,
+  "LLOC": "CARDEDEU",
+  "CATEGORIA": "FEMENÍ",
+  "LOCAL": "FASE FINAL ",
+  "VISITANT": "FASE FINAL "
+ },
+ {
+  "DATA": "06\/25\/2025",
+  "JORNADA": 16,
+  "LLOC": "CARDEDEU",
+  "CATEGORIA": "MIXTE",
+  "LOCAL": "OSONA HORSES",
+  "VISITANT": "LA SAGA"
+ },
+ {
+  "DATA": "06\/26\/2025",
+  "JORNADA": 16,
+  "LLOC": "CARDEDEU",
+  "CATEGORIA": "MIXTE",
+  "LOCAL": "SERRAT 2",
+  "VISITANT": "ALFORGES"
+ },
+ {
+  "DATA": "06\/27\/2025",
+  "JORNADA": 16,
+  "LLOC": "CARDEDEU",
+  "CATEGORIA": "MIXTE",
+  "LOCAL": "BANYOLES 1",
+  "VISITANT": "BANYOLES 2"
+ },
+ {
+  "DATA": "06\/28\/2025",
+  "JORNADA": 16,
+  "LLOC": "CARDEDEU",
+  "CATEGORIA": "MIXTE",
+  "LOCAL": "EQUINOVA",
+  "VISITANT": "CEEC"
+ },
+ {
+  "DATA": "06\/29\/2025",
+  "JORNADA": 16,
+  "LLOC": "CARDEDEU",
+  "CATEGORIA": "MIXTE",
+  "LOCAL": "GT",
+  "VISITANT": "SERRAT 1"
+ }
+]
+}
