@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos de la Liga de Horseball</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Datos de la Liga de Horseball 2024-2025</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Equipo</th>
+            <th>Jugadores</th>
+            <th>Puntos</th>
+            <!-- Añadir más columnas según los datos relevantes del JSON -->
+        </tr>
+    </thead>
+    <tbody id="tabla-datos">
+        <!-- Aquí se insertarán los datos del JSON -->
+    </tbody>
+</table>
+
+<script>
+    // Función para cargar y mostrar los datos del JSON
+    async function cargarDatos() {
+        try {
+            // Cargar el archivo JSON
+            const response = await fetch('horseball-2024-2025.json');
+            const data = await response.json();
+            
+            // Obtener el cuerpo de la tabla
+            const tabla = document.getElementById('tabla-datos');
+
+            // Iterar sobre los datos y añadir filas a la tabla
+            data.forEach(equipo => {
+                const fila = document.createElement('tr');
+                
+                // Crear celdas y añadir los datos
+                const celdaEquipo = document.createElement('td');
+                celdaEquipo.textContent = equipo.nombre_equipo;
+                fila.appendChild(celdaEquipo);
+                
+                const celdaJugadores = document.createElement('td');
+                celdaJugadores.textContent = equipo.jugadores.join(', ');
+                fila.appendChild(celdaJugadores);
+                
+                const celdaPuntos = document.createElement('td');
+                celdaPuntos.textContent = equipo.puntos;
+                fila.appendChild(celdaPuntos);
+
+                // Añadir la fila a la tabla
+                tabla.appendChild(fila);
+            });
+        } catch (error) {
+            console.error('Error al cargar los datos:', error);
+        }
+    }
+
+    // Llamar a la función para cargar los datos cuando se cargue la página
+    window.onload = cargarDatos;
+</script>
+
+</body>
+</html>
