@@ -1,81 +1,270 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="ca">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Datos de la Liga de Horseball</title>
+    <title>Dades de la Lliga de Horseball</title>
     <!-- Enlace a Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilo para el select estándar */
+        .form-select {
+            width: 100%; /* Asegúrate de que ocupe el 100% del ancho */
+        }
+    </style>
 </head>
 <body>
 
 <div class="container my-4">
-    <h1 class="text-center mb-4">Datos de la Liga de Horseball 2024-2025</h1>
+    <h1 class="text-center mb-4">LLiga Catalana Horseball 2024-25</h1>
 
-    <table class="table table-striped table-hover">
-        <thead class="table-dark">
-            <tr>
-                <th>Fecha</th>
-                <th>Jornada</th>
-                <th>Localización</th>
-                <th>Hora Partido</th>
-                <th>Hora Calentamiento</th>
-                <th>Categoría</th>
-                <th>Local</th>
-                <th>Visitante</th>
-            </tr>
-        </thead>
-        <tbody id="tabla-datos">
-            <!-- Los datos del JSON se insertarán aquí -->
-        </tbody>
-    </table>
+    <!-- Select per filtrar per jornada i categoria -->
+    <div class="row mb-4">
+        <div class="col-md-4">
+            <label for="filtro-jornada" class="form-label">Filtrar per Jornada:</label>
+            <select id="filtro-jornada" class="form-select">
+                <option value="todos">Tots</option>
+            </select>
+        </div>
+        <div class="col-md-4">
+            <label for="filtro-categoria" class="form-label">Filtrar per Categoria:</label>
+            <select id="filtro-categoria" class="form-select">
+                <option value="todos">Tots</option>
+            </select>
+        </div>
+        <div class="col-md-4" id="equipo-container" style="display: none;"> <!-- Ocultar inicialmente -->
+            <label for="filtro-equipo" class="form-label">Equip:</label> <!-- Cambiar título -->
+            <select id="filtro-equipo" class="form-select">
+                <option value="todos">Tots</option>
+            </select>
+        </div>
+    </div>
+
+    <button id="btn-clear-filters" class="btn btn-danger mb-4">Borrar Filtres</button> <!-- Botón para borrar filtros -->
+
+    <!-- Contenedor para las tarjetas (móvil) -->
+    <div id="tarjetas-datos" class="row d-md-none"> <!-- Solo visible en móvil -->
+        <!-- Els dades del JSON filtrats es mostraran aquí como tarjetas -->
+    </div>
+
+    <!-- Contenedor para la tabla (pantallas grandes) -->
+    <div class="table-responsive d-none d-md-block"> <!-- Solo visible en pantallas grandes -->
+        <table class="table table-striped table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th>Data</th>
+                    <th class="text-center">Jornada</th>
+                    <th>Localització</th>
+                    <th class="text-center">Hora Partit</th>
+                    <th class="text-center">Hora Escalfament</th>
+                    <th>Categoria</th>
+                    <th class="text-end">Local</th>
+                    <th class="text-center">-</th> <!-- Separador alineado al centro sin título -->
+                    <th>Visitant</th>
+                </tr>
+            </thead>
+            <tbody id="tabla-datos">
+                <!-- Els dades del JSON filtrats es mostraran aquí -->
+            </tbody>
+        </table>
+    </div>
 </div>
 
 <!-- Enlace a Bootstrap JS (Opcional si necesitas funcionalidades interactivas de Bootstrap) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Enlace a jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 <script>
+    let partits = [];
+
     // Función para formatear la fecha en formato español (DD/MM/YYYY)
     function formatearFecha(fecha) {
-        // Suponiendo que el formato original es MM/DD/YYYY
         const partes = fecha.split('/');
         return `${partes[1]}/${partes[0]}/${partes[2]}`;
     }
-    
+
+    // Función para llenar los select boxes dinámicamente
+    function llenarSelectBox(partits, campo, selectId) {
+        const valoresUnicos = [...new Set(partits.map(juego => juego[campo]))]; // Obtener valores únicos
+        const selectBox = document.getElementById(selectId);
+        selectBox.innerHTML = '<option value="todos">Tots</option>'; // Reiniciar el select
+        valoresUnicos.forEach(valor => {
+            const option = document.createElement('option');
+            option.value = valor;
+            option.textContent = valor;
+            selectBox.appendChild(option);
+        });
+    }
+
+    // Función para llenar el select box de equipos filtrando por categoría
+    function llenarSelectEquipoPorCategoria(categoria) {
+        const selectEquipo = document.getElementById('filtro-equipo');
+        selectEquipo.innerHTML = '<option value="todos">Tots</option>'; // Reiniciar el select
+
+        const equipos = new Set(partits
+            .filter(juego => categoria === 'todos' || juego.CATEGORIA === categoria) // Filtrar por categoría
+            .flatMap(juego => [juego.LOCAL, juego.VISITANT])); // Obtener equipos únicos
+
+        // Convertir a un array y eliminar "FASE FINAL"
+        const equipoArray = Array.from(equipos).filter(equipo => equipo !== "FASE FINAL");
+
+        equipoArray.forEach(equipo => {
+            const option = document.createElement('option');
+            option.value = equipo;
+            option.textContent = equipo;
+            selectEquipo.appendChild(option);
+        });
+    }
+
+    // Función para mostrar los datos filtrados en tarjetas para móvil
+    function mostrarTarjetas(filtros) {
+        const contenedor = document.getElementById('tarjetas-datos');
+        contenedor.innerHTML = ''; // Limpiar el contenedor
+
+        partits.forEach(juego => {
+            const cumpleFiltroJornada = (filtros.jornada === "todos" || juego.JORNADA == filtros.jornada);
+            const cumpleFiltroCategoria = (filtros.categoria === "todos" || juego.CATEGORIA === filtros.categoria);
+            const cumpleFiltroEquipo = (filtros.equipo === "todos" || filtros.equipo === juego.LOCAL || filtros.equipo === juego.VISITANT);
+
+            if (cumpleFiltroJornada && cumpleFiltroCategoria && cumpleFiltroEquipo) {
+                const tarjeta = document.createElement('div');
+                tarjeta.className = 'col-12 mb-4'; // Responsive: ocupa toda la fila en móviles
+                tarjeta.innerHTML = `
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Data: ${formatearFecha(juego.DATA) || '-'}</h5>
+                            <p class="card-text"><strong>Jornada:</strong> ${juego.JORNADA !== undefined ? juego.JORNADA : '-'}</p>
+                            <p class="card-text"><strong>Localització:</strong> ${juego.LLOC !== undefined ? juego.LLOC : '-'}</p>
+                            <p class="card-text"><strong>Hora Partit:</strong> ${juego["H.PARTIT"] !== undefined ? juego["H.PARTIT"] : '-'}</p>
+                            <p class="card-text"><strong>Hora Escalfament:</strong> ${juego["H.ESCALF."] !== undefined ? juego["H.ESCALF."] : '-'}</p>
+                            <p class="card-text"><strong>Categoria:</strong> ${juego.CATEGORIA !== undefined ? juego.CATEGORIA : '-'}</p>
+                            <p class="card-text"><strong>Local:</strong> ${juego.LOCAL !== undefined ? juego.LOCAL : '-'}</p>
+                            <p class="card-text"><strong>Visitant:</strong> ${juego.VISITANT !== undefined ? juego.VISITANT : '-'}</p>
+                        </div>
+                    </div>
+                `;
+                contenedor.appendChild(tarjeta);
+            }
+        });
+    }
+
+    // Función para mostrar los datos filtrados en la tabla
+    function mostrarDatos(filtros) {
+        const tabla = document.getElementById('tabla-datos');
+        tabla.innerHTML = ''; // Limpiar la tabla
+
+        partits.forEach(juego => {
+            const cumpleFiltroJornada = (filtros.jornada === "todos" || juego.JORNADA == filtros.jornada);
+            const cumpleFiltroCategoria = (filtros.categoria === "todos" || juego.CATEGORIA === filtros.categoria);
+            const cumpleFiltroEquipo = (filtros.equipo === "todos" || (filtros.equipo === juego.LOCAL || filtros.equipo === juego.VISITANT));
+
+            if (cumpleFiltroJornada && cumpleFiltroCategoria && cumpleFiltroEquipo) {
+                const fila = document.createElement('tr');
+                fila.innerHTML = `
+                    <td>${formatearFecha(juego.DATA) || '-'}</td>
+                    <td class="text-center">${juego.JORNADA !== undefined ? juego.JORNADA : '-'}</td>
+                    <td>${juego.LLOC !== undefined ? juego.LLOC : '-'}</td>
+                    <td class="text-center">${juego["H.PARTIT"] !== undefined ? juego["H.PARTIT"] : '-'}</td>
+                    <td class="text-center">${juego["H.ESCALF."] !== undefined ? juego["H.ESCALF."] : '-'}</td>
+                    <td>${juego.CATEGORIA !== undefined ? juego.CATEGORIA : '-'}</td>
+                    <td class="text-end">${juego.LOCAL !== undefined ? juego.LOCAL : '-'}</td>
+                    <td class="text-center">-</td> <!-- Separador alineado al centro -->
+                    <td>${juego.VISITANT !== undefined ? juego.VISITANT : '-'}</td>
+                `;
+                tabla.appendChild(fila);
+            }
+        });
+    }
+
     // Función para cargar y mostrar los datos del JSON
     async function cargarDatos() {
         try {
-            // Cargar el archivo JSON
             const response = await fetch('horseball-2024-2025.json');
             const data = await response.json();
-            
-            // Acceder al array de partidos en la clave "Partits"
-            const partits = data.Partits_Complet;
+            partits = data.Partits_Complet; // Cambiar a la nueva clave
 
-            // Obtener el cuerpo de la tabla
-            const tabla = document.getElementById('tabla-datos');
+            // Llenar los select boxes
+            llenarSelectBox(partits, 'JORNADA', 'filtro-jornada');
+            llenarSelectBox(partits, 'CATEGORIA', 'filtro-categoria');
 
-            // Iterar sobre los partidos y añadir filas a la tabla
-            partits.forEach(juego => {
-                if (juego.LOCAL === "HIPIC GT" || juego.VISITANT === "HIPIC GT") {
-                    const fila = document.createElement('tr');
-                    
-                    // Crear celdas para cada campo del JSON
-                    fila.innerHTML = `
-                        <td>${formatearFecha(juego.DATA)}</td>
-                        <td>${juego.JORNADA}</td>
-                        <td>${juego.LLOC}</td>
-                        <td>${juego["H.PARTIT"]}</td>
-                        <td>${juego["H.ESCALF."]}</td>
-                        <td>${juego.CATEGORIA}</td>
-                        <td>${juego.LOCAL}</td>
-                        <td>${juego.VISITANT}</td>
-                    `;
-                    
-                    // Añadir la fila a la tabla
-                    tabla.appendChild(fila);
-                }
+            // Mostrar todos los datos inicialmente
+            mostrarDatos({
+                jornada: 'todos',
+                categoria: 'todos',
+                equipo: 'todos', // Cambiado a cadena para selección única
             });
+            mostrarTarjetas({
+                jornada: 'todos',
+                categoria: 'todos',
+                equipo: 'todos', // Cambiado a cadena para selección única
+            });
+
+            // Añadir eventos de cambio para los filtros
+            document.getElementById('filtro-jornada').addEventListener('change', (event) => {
+                mostrarDatos({
+                    jornada: event.target.value,
+                    categoria: document.getElementById('filtro-categoria').value,
+                    equipo: document.getElementById('filtro-equipo').value, // Obtener selección única
+                });
+                mostrarTarjetas({
+                    jornada: event.target.value,
+                    categoria: document.getElementById('filtro-categoria').value,
+                    equipo: document.getElementById('filtro-equipo').value, // Obtener selección única
+                });
+            });
+
+            document.getElementById('filtro-categoria').addEventListener('change', (event) => {
+                const categoriaSeleccionada = event.target.value;
+                mostrarDatos({
+                    jornada: document.getElementById('filtro-jornada').value,
+                    categoria: categoriaSeleccionada,
+                    equipo: document.getElementById('filtro-equipo').value, // Obtener selección única
+                });
+                mostrarTarjetas({
+                    jornada: document.getElementById('filtro-jornada').value,
+                    categoria: categoriaSeleccionada,
+                    equipo: document.getElementById('filtro-equipo').value, // Obtener selección única
+                });
+                // Mostrar el select de equipo solo después de seleccionar una categoría
+                document.getElementById('equipo-container').style.display = categoriaSeleccionada === 'todos' ? 'none' : 'block';
+
+                // Llenar el select de equipos filtrando por la categoría seleccionada
+                llenarSelectEquipoPorCategoria(categoriaSeleccionada);
+            });
+
+            document.getElementById('filtro-equipo').addEventListener('change', (event) => {
+                mostrarDatos({
+                    jornada: document.getElementById('filtro-jornada').value,
+                    categoria: document.getElementById('filtro-categoria').value,
+                    equipo: event.target.value, // Obtener selección única
+                });
+                mostrarTarjetas({
+                    jornada: document.getElementById('filtro-jornada').value,
+                    categoria: document.getElementById('filtro-categoria').value,
+                    equipo: event.target.value, // Obtener selección única
+                });
+            });
+
+            // Añadir evento para el botón de borrar filtros
+            document.getElementById('btn-clear-filters').addEventListener('click', () => {
+                // Reiniciar los select boxes
+                document.getElementById('filtro-jornada').value = 'todos';
+                document.getElementById('filtro-categoria').value = 'todos';
+                document.getElementById('filtro-equipo').value = 'todos'; // Reiniciar el select único
+                document.getElementById('equipo-container').style.display = 'none'; // Ocultar el select de equipos
+                mostrarDatos({
+                    jornada: 'todos',
+                    categoria: 'todos',
+                    equipo: 'todos', // Cambiado a cadena para selección única
+                });
+                mostrarTarjetas({
+                    jornada: 'todos',
+                    categoria: 'todos',
+                    equipo: 'todos', // Cambiado a cadena para selección única
+                });
+            });
+
         } catch (error) {
             console.error('Error al cargar los datos:', error);
         }
