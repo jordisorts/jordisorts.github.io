@@ -41,7 +41,6 @@
     </div>
 
     <button id="btn-clear-filters" class="btn btn-danger mb-4">Borrar Filtres</button> <!-- Botón para borrar filtros -->
-    <button id="btn-generate-pdf" class="btn btn-primary mb-4">GENERAR PDF</button> <!-- Botón para generar PDF -->
 
     <!-- Contenedor para la tabla (pantallas grandes y móviles) -->
     <div class="table-responsive"> <!-- Contenedor responsive -->
@@ -70,12 +69,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Enlace a jQuery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<!-- Enlace a jsPDF -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-<!-- Enlace a DOMPurify -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.4/purify.min.js"></script>
-<!-- Enlace a html2canvas -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 
 <script>
     let partits = [];
@@ -207,42 +200,6 @@
                     jornada: 'todos',
                     categoria: 'todos',
                     equipo: 'todos', // Cambiado a cadena para selección única
-                });
-            });
-
-            // Evento para el botón "GENERAR PDF"
-            document.getElementById('btn-generate-pdf').addEventListener('click', () => {
-                const { jsPDF } = window.jspdf;
-
-                // Usar html2canvas para capturar la tabla
-                html2canvas(document.querySelector('.table-responsive')).then(canvas => {
-                    const imgData = canvas.toDataURL('image/png');
-                    const doc = new jsPDF({
-                        orientation: 'portrait',
-                        unit: 'mm',
-                        format: 'a4',
-                        putOnlyUsedFonts: true,
-                        floatPrecision: 16 // Incremente la precisión de flotante
-                    });
-                    const imgWidth = 190; // Ancho de la imagen en mm
-                    const pageHeight = doc.internal.pageSize.height; // Altura de la página
-                    const imgHeight = (canvas.height * imgWidth) / canvas.width; // Altura de la imagen
-                    let heightLeft = imgHeight;
-
-                    let position = 10; // Margen superior de 10 mm
-
-                    // Añadir la imagen al PDF
-                    doc.addImage(imgData, 'PNG', 10, position, imgWidth, imgHeight);
-                    heightLeft -= pageHeight - 20; // Margen inferior de 10 mm
-
-                    while (heightLeft >= 0) {
-                        position = heightLeft - imgHeight + 10; // Margen superior de 10 mm
-                        doc.addPage();
-                        doc.addImage(imgData, 'PNG', 10, position, imgWidth, imgHeight);
-                        heightLeft -= pageHeight;
-                    }
-
-                    doc.save('liga_horseball.pdf'); // Guardar el PDF
                 });
             });
 
