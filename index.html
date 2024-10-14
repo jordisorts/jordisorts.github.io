@@ -10,6 +10,8 @@
     
     <!-- Enlace a Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+    
     <style>
         /* Estilo para el select estándar */
         .form-select {
@@ -161,17 +163,18 @@
                 const matchCard = document.createElement('div');
                 matchCard.classList.add('match-card', 'mb-3', 'p-3');
                 matchCard.innerHTML = `
-                    <h5>${formatearFecha(juego.DATA) || '-'} - ${juego.LLOC || '-'}</h5> <!-- Separador de fecha y localización -->
+                    <p class="text-center mb-0">Data: <strong>${formatearFecha(juego.DATA) || '-'}</strong> - Lloc: <strong>${juego.LLOC || '-'}</strong></p> <!-- Separador de fecha y localización -->
                     <hr>
-                    <p><strong>${juego.CATEGORIA || '-'}</strong></p> <!-- Categoría en una línea separada -->
+                    <p class ="text-center mb-0">Categoria: <strong>${juego.CATEGORIA || '-'}</strong> - Jornada: <strong>${juego.JORNADA !== undefined ? juego.JORNADA : '-'}</strong></p>
                     <hr>
-                    <h3>${juego.LOCAL || '-'} vs ${juego.VISITANT || '-'}</h3> <!-- Local y Visitante con el separador 'vs' -->
+                    <p class="text-center mb-0">
+                        <span>H.Escalfament <strong>${juego["H.ESCALF."] !== undefined ? juego["H.ESCALF."] : '-'}</strong></span> - 
+                        <span>H.Partit <strong>${juego["H.PARTIT"] !== undefined ? juego["H.PARTIT"] : '-'}</strong></span>
+                    </p>
                     <hr>
-                    <p><strong>Jornada:</strong> ${juego.JORNADA !== undefined ? juego.JORNADA : '-'}</p> <!-- Jornada -->
-                    <hr>
-                    <p><strong>Hora Escalfament:</strong> ${juego["H.ESCALF."] !== undefined ? juego["H.ESCALF."] : '-'}</p> <!-- Hora de calentamiento -->
-                    <hr>
-                    <p><strong>Hora Partit:</strong> ${juego["H.PARTIT"] !== undefined ? juego["H.PARTIT"] : '-'}</p> <!-- Hora de partido -->
+                    <h2 class="text-center">${juego.LOCAL || '-'}</h3>
+                    <h5 class="text-center">vs</h5> 
+                    <h2 class="text-center">${juego.VISITANT || '-'}</h3>
                 `;
                 matchesContainer.appendChild(matchCard);
             }
