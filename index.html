@@ -50,22 +50,24 @@
 
             // Iterar sobre los partidos y añadir filas a la tabla
             partits.forEach(juego => {
-                const fila = document.createElement('tr');
-                
-                // Crear celdas para cada campo del JSON
-                fila.innerHTML = `
-                    <td>${juego.DATA}</td>
-                    <td>${juego.JORNADA}</td>
-                    <td>${juego.LLOC}</td>
-                    <td>${juego["H.PARTIT"]}</td>
-                    <td>${juego["H.ESCALF."]}</td>
-                    <td>${juego.CATEGORIA}</td>
-                    <td>${juego.LOCAL}</td>
-                    <td>${juego.VISITANT}</td>
-                `;
-                
-                // Añadir la fila a la tabla
-                tabla.appendChild(fila);
+                if (juego.LOCAL === "HIPIC GT" || juego.VISITANT === "HIPIC GT") {
+                    const fila = document.createElement('tr');
+                    
+                    // Crear celdas para cada campo del JSON
+                    fila.innerHTML = `
+                        <td>${juego.DATA}</td>
+                        <td>${juego.JORNADA}</td>
+                        <td>${juego.LLOC}</td>
+                        <td>${juego["H.PARTIT"]}</td>
+                        <td>${juego["H.ESCALF."]}</td>
+                        <td>${juego.CATEGORIA}</td>
+                        <td>${juego.LOCAL}</td>
+                        <td>${juego.VISITANT}</td>
+                    `;
+                    
+                    // Añadir la fila a la tabla
+                    tabla.appendChild(fila);
+                }
             });
         } catch (error) {
             console.error('Error al cargar los datos:', error);
