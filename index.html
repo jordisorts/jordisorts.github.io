@@ -16,6 +16,9 @@
             padding: 8px;
             text-align: left;
         }
+        th {
+            background-color: #f2f2f2;
+        }
     </style>
 </head>
 <body>
@@ -25,14 +28,18 @@
 <table>
     <thead>
         <tr>
-            <th>Equipo</th>
-            <th>Jugadores</th>
-            <th>Puntos</th>
-            <!-- Añadir más columnas según los datos relevantes del JSON -->
+            <th>Fecha</th>
+            <th>Jornada</th>
+            <th>Localización</th>
+            <th>Hora Partido</th>
+            <th>Hora Calentamiento</th>
+            <th>Categoría</th>
+            <th>Local</th>
+            <th>Visitante</th>
         </tr>
     </thead>
     <tbody id="tabla-datos">
-        <!-- Aquí se insertarán los datos del JSON -->
+        <!-- Los datos del JSON se insertarán aquí -->
     </tbody>
 </table>
 
@@ -44,20 +51,28 @@
             const response = await fetch('horseball-2024-2025.json');
             const data = await response.json();
             
+            // Acceder al array de partidos en la clave "Partits"
+            const partits = data.Partits;
+
             // Obtener el cuerpo de la tabla
             const tabla = document.getElementById('tabla-datos');
 
-            // Iterar sobre los datos y añadir filas a la tabla
-            data.forEach(Partits => {
+            // Iterar sobre los partidos y añadir filas a la tabla
+            partits.forEach(juego => {
                 const fila = document.createElement('tr');
                 
-                // Crear celdas y añadir los datos
-                const celdaEquipo = document.createElement('td');
-                celdaEquipo.textContent = Partits.DATA;
-                fila.appendChild(celdaEquipo);
+                // Crear celdas para cada campo del JSON
+                fila.innerHTML = `
+                    <td>${juego.DATA}</td>
+                    <td>${juego.JORNADA}</td>
+                    <td>${juego.LLOC}</td>
+                    <td>${juego["H.PARTIT"]}</td>
+                    <td>${juego["H.ESCALF."]}</td>
+                    <td>${juego.CATEGORIA}</td>
+                    <td>${juego.LOCAL}</td>
+                    <td>${juego.VISITANT}</td>
+                `;
                 
-                
-
                 // Añadir la fila a la tabla
                 tabla.appendChild(fila);
             });
