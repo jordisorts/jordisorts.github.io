@@ -35,6 +35,13 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
 
 <script>
+    // Función para formatear la fecha en formato español (DD/MM/YYYY)
+    function formatearFecha(fecha) {
+        // Suponiendo que el formato original es MM/DD/YYYY
+        const partes = fecha.split('/');
+        return `${partes[1]}/${partes[0]}/${partes[2]}`;
+    }
+    
     // Función para cargar y mostrar los datos del JSON
     async function cargarDatos() {
         try {
@@ -55,7 +62,7 @@
                     
                     // Crear celdas para cada campo del JSON
                     fila.innerHTML = `
-                        <td>${juego.DATA}</td>
+                        <td>${formatearFecha(juego.DATA)}</td>
                         <td>${juego.JORNADA}</td>
                         <td>${juego.LLOC}</td>
                         <td>${juego["H.PARTIT"]}</td>
