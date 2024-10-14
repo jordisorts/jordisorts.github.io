@@ -41,14 +41,10 @@
     </div>
 
     <button id="btn-clear-filters" class="btn btn-danger mb-4">Borrar Filtres</button> <!-- Botón para borrar filtros -->
+    <button id="btn-generate-pdf" class="btn btn-primary mb-4">GENERAR PDF</button> <!-- Botón para generar PDF -->
 
-    <!-- Contenedor para las tarjetas (móvil) -->
-    <div id="tarjetas-datos" class="row d-md-none"> <!-- Solo visible en móvil -->
-        <!-- Els dades del JSON filtrats es mostraran aquí como tarjetas -->
-    </div>
-
-    <!-- Contenedor para la tabla (pantallas grandes) -->
-    <div class="table-responsive d-none d-md-block"> <!-- Solo visible en pantallas grandes -->
+    <!-- Contenedor para la tabla (pantallas grandes y móviles) -->
+    <div class="table-responsive"> <!-- Contenedor responsive -->
         <table class="table table-striped table-hover">
             <thead class="table-dark">
                 <tr>
@@ -70,10 +66,16 @@
     </div>
 </div>
 
-<!-- Enlace a Bootstrap JS (Opcional si necesitas funcionalidades interactivas de Bootstrap) -->
+<!-- Enlace a Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Enlace a jQuery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- Enlace a jsPDF -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<!-- Enlace a DOMPurify -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.4/purify.min.js"></script>
+<!-- Enlace a html2canvas -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 
 <script>
     let partits = [];
@@ -114,38 +116,6 @@
             option.value = equipo;
             option.textContent = equipo;
             selectEquipo.appendChild(option);
-        });
-    }
-
-    // Función para mostrar los datos filtrados en tarjetas para móvil
-    function mostrarTarjetas(filtros) {
-        const contenedor = document.getElementById('tarjetas-datos');
-        contenedor.innerHTML = ''; // Limpiar el contenedor
-
-        partits.forEach(juego => {
-            const cumpleFiltroJornada = (filtros.jornada === "todos" || juego.JORNADA == filtros.jornada);
-            const cumpleFiltroCategoria = (filtros.categoria === "todos" || juego.CATEGORIA === filtros.categoria);
-            const cumpleFiltroEquipo = (filtros.equipo === "todos" || filtros.equipo === juego.LOCAL || filtros.equipo === juego.VISITANT);
-
-            if (cumpleFiltroJornada && cumpleFiltroCategoria && cumpleFiltroEquipo) {
-                const tarjeta = document.createElement('div');
-                tarjeta.className = 'col-12 mb-4'; // Responsive: ocupa toda la fila en móviles
-                tarjeta.innerHTML = `
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Data: ${formatearFecha(juego.DATA) || '-'}</h5>
-                            <p class="card-text"><strong>Jornada:</strong> ${juego.JORNADA !== undefined ? juego.JORNADA : '-'}</p>
-                            <p class="card-text"><strong>Localització:</strong> ${juego.LLOC !== undefined ? juego.LLOC : '-'}</p>
-                            <p class="card-text"><strong>Hora Partit:</strong> ${juego["H.PARTIT"] !== undefined ? juego["H.PARTIT"] : '-'}</p>
-                            <p class="card-text"><strong>Hora Escalfament:</strong> ${juego["H.ESCALF."] !== undefined ? juego["H.ESCALF."] : '-'}</p>
-                            <p class="card-text"><strong>Categoria:</strong> ${juego.CATEGORIA !== undefined ? juego.CATEGORIA : '-'}</p>
-                            <p class="card-text"><strong>Local:</strong> ${juego.LOCAL !== undefined ? juego.LOCAL : '-'}</p>
-                            <p class="card-text"><strong>Visitant:</strong> ${juego.VISITANT !== undefined ? juego.VISITANT : '-'}</p>
-                        </div>
-                    </div>
-                `;
-                contenedor.appendChild(tarjeta);
-            }
         });
     }
 
@@ -194,20 +164,10 @@
                 categoria: 'todos',
                 equipo: 'todos', // Cambiado a cadena para selección única
             });
-            mostrarTarjetas({
-                jornada: 'todos',
-                categoria: 'todos',
-                equipo: 'todos', // Cambiado a cadena para selección única
-            });
 
             // Añadir eventos de cambio para los filtros
             document.getElementById('filtro-jornada').addEventListener('change', (event) => {
                 mostrarDatos({
-                    jornada: event.target.value,
-                    categoria: document.getElementById('filtro-categoria').value,
-                    equipo: document.getElementById('filtro-equipo').value, // Obtener selección única
-                });
-                mostrarTarjetas({
                     jornada: event.target.value,
                     categoria: document.getElementById('filtro-categoria').value,
                     equipo: document.getElementById('filtro-equipo').value, // Obtener selección única
@@ -221,11 +181,6 @@
                     categoria: categoriaSeleccionada,
                     equipo: document.getElementById('filtro-equipo').value, // Obtener selección única
                 });
-                mostrarTarjetas({
-                    jornada: document.getElementById('filtro-jornada').value,
-                    categoria: categoriaSeleccionada,
-                    equipo: document.getElementById('filtro-equipo').value, // Obtener selección única
-                });
                 // Mostrar el select de equipo solo después de seleccionar una categoría
                 document.getElementById('equipo-container').style.display = categoriaSeleccionada === 'todos' ? 'none' : 'block';
 
@@ -235,11 +190,6 @@
 
             document.getElementById('filtro-equipo').addEventListener('change', (event) => {
                 mostrarDatos({
-                    jornada: document.getElementById('filtro-jornada').value,
-                    categoria: document.getElementById('filtro-categoria').value,
-                    equipo: event.target.value, // Obtener selección única
-                });
-                mostrarTarjetas({
                     jornada: document.getElementById('filtro-jornada').value,
                     categoria: document.getElementById('filtro-categoria').value,
                     equipo: event.target.value, // Obtener selección única
@@ -258,10 +208,41 @@
                     categoria: 'todos',
                     equipo: 'todos', // Cambiado a cadena para selección única
                 });
-                mostrarTarjetas({
-                    jornada: 'todos',
-                    categoria: 'todos',
-                    equipo: 'todos', // Cambiado a cadena para selección única
+            });
+
+            // Evento para el botón "GENERAR PDF"
+            document.getElementById('btn-generate-pdf').addEventListener('click', () => {
+                const { jsPDF } = window.jspdf;
+
+                // Usar html2canvas para capturar la tabla
+                html2canvas(document.querySelector('.table-responsive')).then(canvas => {
+                    const imgData = canvas.toDataURL('image/png');
+                    const doc = new jsPDF({
+                        orientation: 'portrait',
+                        unit: 'mm',
+                        format: 'a4',
+                        putOnlyUsedFonts: true,
+                        floatPrecision: 16 // Incremente la precisión de flotante
+                    });
+                    const imgWidth = 190; // Ancho de la imagen en mm
+                    const pageHeight = doc.internal.pageSize.height; // Altura de la página
+                    const imgHeight = (canvas.height * imgWidth) / canvas.width; // Altura de la imagen
+                    let heightLeft = imgHeight;
+
+                    let position = 10; // Margen superior de 10 mm
+
+                    // Añadir la imagen al PDF
+                    doc.addImage(imgData, 'PNG', 10, position, imgWidth, imgHeight);
+                    heightLeft -= pageHeight - 20; // Margen inferior de 10 mm
+
+                    while (heightLeft >= 0) {
+                        position = heightLeft - imgHeight + 10; // Margen superior de 10 mm
+                        doc.addPage();
+                        doc.addImage(imgData, 'PNG', 10, position, imgWidth, imgHeight);
+                        heightLeft -= pageHeight;
+                    }
+
+                    doc.save('liga_horseball.pdf'); // Guardar el PDF
                 });
             });
 
