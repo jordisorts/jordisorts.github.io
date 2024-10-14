@@ -34,6 +34,9 @@
                 display: none; /* Ocultar tabla en pantallas pequeñas */
             }
         }
+        hr {
+            margin: 10px 0; /* Margen alrededor de la línea divisoria */
+        }
     </style>
 </head>
 <body>
@@ -155,10 +158,15 @@
                 matchCard.classList.add('match-card', 'mb-3', 'p-3');
                 matchCard.innerHTML = `
                     <h5>${formatearFecha(juego.DATA) || '-'} - ${juego.LLOC || '-'}</h5> <!-- Separador de fecha y localización -->
+                    <hr>
                     <p><strong>${juego.CATEGORIA || '-'}</strong></p> <!-- Categoría en una línea separada -->
+                    <hr>
                     <h3>${juego.LOCAL || '-'} vs ${juego.VISITANT || '-'}</h3> <!-- Local y Visitante con el separador 'vs' -->
+                    <hr>
                     <p><strong>Jornada:</strong> ${juego.JORNADA !== undefined ? juego.JORNADA : '-'}</p> <!-- Jornada -->
+                    <hr>
                     <p><strong>Hora Escalfament:</strong> ${juego["H.ESCALF."] !== undefined ? juego["H.ESCALF."] : '-'}</p> <!-- Hora de calentamiento -->
+                    <hr>
                     <p><strong>Hora Partit:</strong> ${juego["H.PARTIT"] !== undefined ? juego["H.PARTIT"] : '-'}</p> <!-- Hora de partido -->
                 `;
                 matchesContainer.appendChild(matchCard);
