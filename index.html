@@ -56,13 +56,7 @@
                 celdaEquipo.textContent = equipo.DATA;
                 fila.appendChild(celdaEquipo);
                 
-                const celdaJugadores = document.createElement('td');
-                celdaJugadores.textContent = equipo.jugadores.join(', ');
-                fila.appendChild(celdaJugadores);
                 
-                const celdaPuntos = document.createElement('td');
-                celdaPuntos.textContent = equipo.puntos;
-                fila.appendChild(celdaPuntos);
 
                 // Añadir la fila a la tabla
                 tabla.appendChild(fila);
