@@ -11,6 +11,29 @@
         .form-select {
             width: 100%; /* Asegúrate de que ocupe el 100% del ancho */
         }
+        .match-card {
+            border: 1px solid #dee2e6;
+            border-radius: 0.25rem;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+        /* Mostrar tarjetas solo en dispositivos móviles */
+        @media (min-width: 768px) {
+            .mobile-view {
+                display: none; /* Ocultar tarjetas en pantallas grandes */
+            }
+            .desktop-view {
+                display: block; /* Mostrar tabla en pantallas grandes */
+            }
+        }
+        @media (max-width: 767.98px) {
+            .mobile-view {
+                display: block; /* Mostrar tarjetas en pantallas pequeñas */
+            }
+            .desktop-view {
+                display: none; /* Ocultar tabla en pantallas pequeñas */
+            }
+        }
     </style>
 </head>
 <body>
@@ -42,8 +65,13 @@
 
     <button id="btn-clear-filters" class="btn btn-danger mb-4">Borrar Filtres</button> <!-- Botón para borrar filtros -->
 
-    <!-- Contenedor para la tabla (pantallas grandes y móviles) -->
-    <div class="table-responsive"> <!-- Contenedor responsive -->
+    <!-- Contenedor para mostrar los partidos -->
+    <section id="matches" class="matches-list mobile-view">
+        <!-- Los partidos filtrados se mostrarán aquí como tarjetas -->
+    </section>
+
+    <!-- Contenedor para la vista de escritorio -->
+    <div class="table-responsive desktop-view"> <!-- Contenedor responsive para la tabla -->
         <table class="table table-striped table-hover">
             <thead class="table-dark">
                 <tr>
@@ -112,8 +140,34 @@
         });
     }
 
+    // Función para mostrar los datos filtrados en tarjetas
+    function mostrarDatosEnTarjetas(filtros) {
+        const matchesContainer = document.getElementById('matches');
+        matchesContainer.innerHTML = ''; // Limpiar el contenedor
+
+        partits.forEach(juego => {
+            const cumpleFiltroJornada = (filtros.jornada === "todos" || juego.JORNADA == filtros.jornada);
+            const cumpleFiltroCategoria = (filtros.categoria === "todos" || juego.CATEGORIA === filtros.categoria);
+            const cumpleFiltroEquipo = (filtros.equipo === "todos" || (filtros.equipo === juego.LOCAL || filtros.equipo === juego.VISITANT));
+
+            if (cumpleFiltroJornada && cumpleFiltroCategoria && cumpleFiltroEquipo) {
+                const matchCard = document.createElement('div');
+                matchCard.classList.add('match-card', 'mb-3', 'p-3');
+                matchCard.innerHTML = `
+                    <h5>${formatearFecha(juego.DATA) || '-'} - ${juego.LLOC || '-'}</h5> <!-- Separador de fecha y localización -->
+                    <p><strong>${juego.CATEGORIA || '-'}</strong></p> <!-- Categoría en una línea separada -->
+                    <h3>${juego.LOCAL || '-'} vs ${juego.VISITANT || '-'}</h3> <!-- Local y Visitante con el separador 'vs' -->
+                    <p><strong>Jornada:</strong> ${juego.JORNADA !== undefined ? juego.JORNADA : '-'}</p> <!-- Jornada -->
+                    <p><strong>Hora Escalfament:</strong> ${juego["H.ESCALF."] !== undefined ? juego["H.ESCALF."] : '-'}</p> <!-- Hora de calentamiento -->
+                    <p><strong>Hora Partit:</strong> ${juego["H.PARTIT"] !== undefined ? juego["H.PARTIT"] : '-'}</p> <!-- Hora de partido -->
+                `;
+                matchesContainer.appendChild(matchCard);
+            }
+        });
+    }
+
     // Función para mostrar los datos filtrados en la tabla
-    function mostrarDatos(filtros) {
+    function mostrarDatosEnTabla(filtros) {
         const tabla = document.getElementById('tabla-datos');
         tabla.innerHTML = ''; // Limpiar la tabla
 
@@ -152,28 +206,34 @@
             llenarSelectBox(partits, 'CATEGORIA', 'filtro-categoria');
 
             // Mostrar todos los datos inicialmente
-            mostrarDatos({
+            const filtrosIniciales = {
                 jornada: 'todos',
                 categoria: 'todos',
                 equipo: 'todos', // Cambiado a cadena para selección única
-            });
+            };
+            mostrarDatosEnTarjetas(filtrosIniciales); // Mostrar tarjetas
+            mostrarDatosEnTabla(filtrosIniciales); // Mostrar tabla
 
             // Añadir eventos de cambio para los filtros
             document.getElementById('filtro-jornada').addEventListener('change', (event) => {
-                mostrarDatos({
+                const filtros = {
                     jornada: event.target.value,
                     categoria: document.getElementById('filtro-categoria').value,
                     equipo: document.getElementById('filtro-equipo').value, // Obtener selección única
-                });
+                };
+                mostrarDatosEnTarjetas(filtros);
+                mostrarDatosEnTabla(filtros);
             });
 
             document.getElementById('filtro-categoria').addEventListener('change', (event) => {
                 const categoriaSeleccionada = event.target.value;
-                mostrarDatos({
+                const filtros = {
                     jornada: document.getElementById('filtro-jornada').value,
                     categoria: categoriaSeleccionada,
                     equipo: document.getElementById('filtro-equipo').value, // Obtener selección única
-                });
+                };
+                mostrarDatosEnTarjetas(filtros);
+                mostrarDatosEnTabla(filtros);
                 // Mostrar el select de equipo solo después de seleccionar una categoría
                 document.getElementById('equipo-container').style.display = categoriaSeleccionada === 'todos' ? 'none' : 'block';
 
@@ -182,11 +242,13 @@
             });
 
             document.getElementById('filtro-equipo').addEventListener('change', (event) => {
-                mostrarDatos({
+                const filtros = {
                     jornada: document.getElementById('filtro-jornada').value,
                     categoria: document.getElementById('filtro-categoria').value,
                     equipo: event.target.value, // Obtener selección única
-                });
+                };
+                mostrarDatosEnTarjetas(filtros);
+                mostrarDatosEnTabla(filtros);
             });
 
             // Añadir evento para el botón de borrar filtros
@@ -196,7 +258,12 @@
                 document.getElementById('filtro-categoria').value = 'todos';
                 document.getElementById('filtro-equipo').value = 'todos'; // Reiniciar el select único
                 document.getElementById('equipo-container').style.display = 'none'; // Ocultar el select de equipos
-                mostrarDatos({
+                mostrarDatosEnTarjetas({
+                    jornada: 'todos',
+                    categoria: 'todos',
+                    equipo: 'todos', // Cambiado a cadena para selección única
+                });
+                mostrarDatosEnTabla({
                     jornada: 'todos',
                     categoria: 'todos',
                     equipo: 'todos', // Cambiado a cadena para selección única
