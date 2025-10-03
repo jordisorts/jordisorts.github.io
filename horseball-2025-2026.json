@@ -1,4 +1,5 @@
-[
+{
+"Partits":[
   {
     "ID PARTIT": "1",
     "JORNADA": "1",
@@ -2343,3 +2344,4 @@
     "SEU": "CARDEDEU"
   }
 ]
+}
